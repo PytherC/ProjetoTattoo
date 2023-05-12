@@ -245,15 +245,10 @@ ul li{
   }
 
 /*RESPONSIVIDADE ATÉ O MINIMO DA TELA @media (min-width: 400px)  and (max-width:800px) { 
-
-    body{
-        background-color: #000000;
-    }
-
     .background-slideshow{
         text-align: center;
         background-image: url("/Vscode/img/fundo.png");
-        height: 350px;
+        height: 320px;
         transition: background-image 0.4s ease-in-out;
     }
 
@@ -273,93 +268,22 @@ ul li{
         box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
     }
 
-    .portifolio{
-        display: none;
-        position: absolute;
-        margin-top: 320px;
-        margin-left: 90px;
-        border: solid 5px;
-        border-color: #fff;
-        height: 55.1%;
-      }
-    
-      .portifolio2{
-        display: none;
-        position: absolute;
-        margin-top: 320px;
-        margin-left: 518px;
-        border: solid 5px;
-        border-color: #fff;
-        height: 55.1%;
-      }
-    
-      .portifolio3{
-        display: none;
-        position: absolute;
-        margin-top: 320px;
-        margin-left: 945px;
-        border: solid 5px;
-        border-color: #fff;
-        height: 55.1%;
-      }
-    
-      .portifolio4{
-        display: none;
-        position: absolute;
-        margin-top: 710px;
-        margin-left: 90px;
-        border: solid 5px;
-        border-color: #fff;
-        height: 55.1%;
-      }
-    
-      .portifolio5{
-        display: none;
-        position: absolute;
-        margin-top: 710px;
-        margin-left: 518px;
-        border: solid 5px;
-        border-color: #fff;
-        height: 55.1%;
-      }
-    
-      .portifolio6{
-        display: none;
-        position: absolute;
-        margin-top: 710px;
-        margin-left: 945px;
-        border: solid 5px;
-        border-color: #fff;
-        height: 55.1%;
-      }
-
-      .rodape{
-        display: none;
-        position: absolute;
-        color: #fff;
-        margin-top: 4000px;
-        width: 100%;
-        height: 600px; /ajuste o valor da altura conforme necessário/
-        background-image: url("/ProjetoTatto/img/fundorodape.png " ) ;
-        box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
-
-
       .artes{
         position: absolute;
-        margin-top: 30px;
-        margin-left: 130px;
+        margin-top: 40px;
+        margin-left: 135px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 8px;
       }
 
       #logo{
-        margin-top: 100px;
+        margin-top: 80px;
         width: 200px;
     }
 
     .meio{
         background-color:#c971cc;
-        color: #000000;
+        color:#000000;
         height: 5px;
     }
 
@@ -368,11 +292,12 @@ ul li{
         padding: 50px;
         border-radius: 20px;
         width: 100px;
+        margin-top: 60px;
     }
 
     .texto{
         margin: 70px;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .botaomeio{
@@ -385,9 +310,9 @@ ul li{
         border: #ffffff;
         font-family: arial;
         margin: 1px;
-        margin-top: -20px;
+        margin-top: -32px;
         position: absolute;
-        right: 165px;
+        right: 160px;
         transition: background .2s;
         box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
     }
@@ -395,6 +320,104 @@ ul li{
     .fundoa{
         display: none;
     }
+
+    .fundob{
+        right: 100px;
+        margin-top: -570px;
+        border-top: 665px solid #c971cc;
+        color: #000000;
+        border-left: 400px solid transparent;
+        border-right: 400px solid transparent;
+        height: 10px;
+        width: 200px;
+    }
+
+    .botaowpp{ 
+        position: fixed;
+        z-index: 1;
+        background-color: #000000;
+        right: 30px;
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
+        border-style: none;
+        background: none;
+      }
+
+      .portifolio{
+        position: absolute;
+        right: 43px;
+        margin-top: 120px;
+        margin-left: 90px;
+        border: solid 5px;
+        border-color: #fff;
+        height: 47.7%;
+      }
+    
+      .portifolio2{
+        position: absolute;
+        right: 43px;
+        margin-top: 490px;
+        margin-left: 90px;
+        border: solid 5px;
+        border-color: #fff;
+        height: 47.7%;
+      }
+    
+      .portifolio3{
+        display: none;
+      }
+    
+      .portifolio4{
+        display: none;
+      }
+    
+      .portifolio5{
+        display: none;
+      }
+    
+      .portifolio6{
+        display: none;
+      }
+
+      #listarodape{
+        right: 20px;
+        margin-top: 36px;
+      }
+
+      .logorodape{
+        margin-top: 20px;
+        right: 200px;
+      }
+
+      .rodape{
+        position: absolute;
+        color: #fff;
+        margin-top: 1200px;
+        width: 100%;
+        height: 370px; /* ajuste o valor da altura conforme necessário 
+        background-image: url("img/fundorodape.png " ) ;
+        box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
+      }
+
+      .localrodape{
+        right: 135px;
+        margin-top: 123px;
+      }
+
+      .telefonerodape{
+        right: 129px;
+        margin-top: 187px;
+      }
+
+      .instagramrodape{
+        margin-top: 290px;
+      }
+
+      .facebookrodape{
+        margin-top: 295px;
+      }
+
   }
 
   @media (min-width: 800px)  and (max-width:1200px) {

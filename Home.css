@@ -2,8 +2,7 @@ body {
     margin: 0px;
     color: #fff;  
     background-color: black;
-    font-family: arial; 
-}
+    font-family: "Alegreya Sans SC", Sans-serif;}
 
 a{
     text-decoration: none;
@@ -14,9 +13,16 @@ ul li{
     list-style-type: none;
 }
 
+hr{
+  margin-top: 430px;
+  z-index: 1;
+  width: 1200px;
+  margin-left: 110px;
+}
+
 .background-slideshow{
     text-align: center;
-    background-image: url("/ProjetoTatto/img/fundo.png");
+    background-image: url("/Vscode/img/fundo.png");
     height: 650px;
     transition: background-image 0.4s ease-in-out;
 }
@@ -40,12 +46,13 @@ ul li{
     right: 200px;
     transition: background .2s;
     box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
-
 }
 
 .botao:hover{
     background-color: #e69ee9;
     color: #cac2c2;
+    transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
 }
 
 .botaowpp { 
@@ -58,6 +65,11 @@ ul li{
     height: 50px;
     border-style: none;
     background: none;
+  }
+
+  .botaowpp:hover{
+    transform: scale(1.3); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
   }
 
 .botaomeio{
@@ -75,24 +87,26 @@ ul li{
     right: 434px;
     transition: background .2s;
     box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
-
 }
 
 .botaomeio:hover{
     background-color: #e69ee9;
     color: #cac2c2;
+    transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
 }
     
 .meio{
     background-color:#c971cc;
-    color: #c971cc;
+    color: #070707;
 }
 
 .leao{
     margin: 95px;
     padding: 50px;
     border-radius: 20px;
-    width: 220px;
+    width: 340px;
+    
 }
 
 .texto{
@@ -129,17 +143,46 @@ ul li{
     color: #fff;
     margin-top: 4000px;
     width: 100%;
-    height: 600px; /* ajuste o valor da altura conforme necessário */
-    background-image: url("/ProjetoTatto/img/fundorodape.png " ) ;
-    box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
+    height: 480px; /* ajuste o valor da altura conforme necessário */
+    background-image: url("img/fundorodape02.png " ) ;
+    border-top: solid 1px #000000;  
   }
   
   #listarodape{
     position: absolute;
     margin-top: 100px;
-    margin-left: 900px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 960px;
+    font-family: "Alegreya Sans SC", Sans-serif;
   }
+
+  .botaorodape{
+    color: #fff;
+    background-color: #c971cc;
+    font-size: 10px;
+    padding: 10px 21px;
+    border-radius: 5px;
+    border: solid 1px;
+    border: #ffffff;
+    font-family: arial;
+    margin: 300px;
+    position: absolute;
+    right: -35px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+}
+
+.botaorodape:hover{
+  background-color: #e69ee9;
+  color: #cac2c2;
+  transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+  transition: transform 0.3s ease-in-out;
+}
+
+  .infofinal{
+    font-size: 12px;
+    margin-left: 1120px;
+  }
+
   span{
     font-size: 14px;
   }
@@ -150,32 +193,42 @@ ul li{
 
   .logorodape{
     position: absolute;
-    margin-top: 120px;
+    margin-top: 10px;
     margin-left: 80px;
   }
 
   .localrodape{
     position: absolute;
     margin-top: 170px;
-    margin-left: 900px;
+    margin-left: 965px;
   }
 
   .telefonerodape{
     position: absolute;
     margin-top: 199px;
-    margin-left: 891px;
+    margin-left: 955px;
   }
 
   .facebookrodape{
     position: absolute;
-    margin-top: 443px;
+    margin-top: 325px;
     margin-left: 250px;
+  }
+
+  .facebookrodape:hover{
+    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
   }
 
   .instagramrodape{
     position: absolute;
-    margin-top: 440px;
-    margin-left: 130px;
+    margin-top: 320px;
+    margin-left: 145px;
+  }
+
+  .instagramrodape:hover{
+    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
   }
 
   h4{
@@ -199,6 +252,11 @@ ul li{
     height: 55.1%;
   }
 
+.portifolio:hover{
+  transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+  transition: transform 0.3s ease-in-out;
+}
+
   .portifolio2{
     position: absolute;
     margin-top: 320px;
@@ -206,6 +264,11 @@ ul li{
     border: solid 5px;
     border-color: #fff;
     height: 55.1%;
+  }
+
+  .portifolio2:hover{
+    transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
   }
 
   .portifolio3{
@@ -245,6 +308,7 @@ ul li{
   }
 
 /*RESPONSIVIDADE ATÉ O MINIMO DA TELA @media (min-width: 400px)  and (max-width:800px) { 
+
     .background-slideshow{
         text-align: center;
         background-image: url("/Vscode/img/fundo.png");
@@ -393,9 +457,9 @@ ul li{
       .rodape{
         position: absolute;
         color: #fff;
-        margin-top: 1200px;
+        margin-top: 930px;
         width: 100%;
-        height: 370px; /* ajuste o valor da altura conforme necessário 
+        height: 370px; ajuste o valor da altura conforme necessário
         background-image: url("img/fundorodape.png " ) ;
         box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
       }
@@ -429,7 +493,6 @@ ul li{
     
 
   }
-
 
 
 

@@ -22,9 +22,10 @@ hr{
 
 .background-slideshow{
     text-align: center;
-    background-image: url("/Vscode/img/fundo.png");
-    height: 650px;
+    background-image: url("img/fundoprincipal02.png");
+    height: 720px;
     transition: background-image 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
 }
 
 #logo{
@@ -84,7 +85,7 @@ hr{
     margin: 1px;
     margin-top: -30px;
     position: absolute;
-    right: 434px;
+    right: 388px;
     transition: background .2s;
     box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
 }
@@ -95,17 +96,36 @@ hr{
     transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
     transition: transform 0.3s ease-in-out;
 }
-    
-.meio{
-    background-color:#c971cc;
-    color: #070707;
+
+.botaofinal{
+  color: #fff;
+  background-color: #c971cc;
+  font-size: 14px;
+  padding: 14px 25px;
+  border-radius: 5px;
+  border: solid 1px;
+  border: #ffffff;
+  font-family: arial;
+  margin: 1px;
+  margin-top: 1290px;
+  position: absolute;
+  right: 590px;
+  transition: background .2s;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+}
+
+.botaofinal:hover{
+  background-color: #e69ee9;
+  color: #cac2c2;
+  transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+  transition: transform 0.3s ease-in-out;
 }
 
 .leao{
-    margin: 95px;
+    margin: 90px;
     padding: 50px;
-    border-radius: 20px;
-    width: 340px;
+    border-radius: 55px;
+    width: 390px;
     
 }
 
@@ -120,7 +140,7 @@ hr{
     position: absolute;
     margin-top: -80px;
     color: #000000;
-    right: 480px;
+    right: 430px;
     height: 2px;
     border-radius: 2px;
     width: 140px;
@@ -129,23 +149,21 @@ hr{
 .fundob{
     position: absolute;
     margin-top: -550px;
-    right: 900px;
+    right: 1100px;
     z-index: -1;
-    border-top: 600px solid #c971cc; 
-    border-left: 600px solid transparent;
+    border-top: 700px solid #c971cc; 
+    border-left: 200px solid transparent;
     border-right: 400px solid transparent;
-    height: 400px;
-    width: 400px;
 }
 
 .rodape{
     position: absolute;
     color: #fff;
-    margin-top: 4000px;
+    margin-top: 1430px;
     width: 100%;
     height: 480px; /* ajuste o valor da altura conforme necessário */
     background-image: url("img/fundorodape02.png " ) ;
-    border-top: solid 1px #000000;  
+    box-shadow: 0px 0px 10px rgba(118, 118, 118, 0.5);
   }
   
   #listarodape{
@@ -239,75 +257,95 @@ hr{
   .artes{
     position: absolute;
     margin-top: 140px;
-    margin-left: 533px;
+    margin-left: 580px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
   .portifolio{
     position: absolute;
-    margin-top: 320px;
-    margin-left: 90px;
+    margin-top: 300px;
+    margin-left: 210px;
     border: solid 5px;
     border-color: #fff;
-    height: 55.1%;
+    height: 56.3%;
   }
 
 .portifolio:hover{
-  transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+  transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
   transition: transform 0.3s ease-in-out;
 }
 
   .portifolio2{
     position: absolute;
-    margin-top: 320px;
-    margin-left: 518px;
+    margin-top: 300px;
+    margin-left: 580px;
     border: solid 5px;
     border-color: #fff;
-    height: 55.1%;
-  }
+    height: 56.3%;
+    }
 
   .portifolio2:hover{
-    transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
     transition: transform 0.3s ease-in-out;
   }
 
   .portifolio3{
     position: absolute;
-    margin-top: 320px;
-    margin-left: 945px;
+    margin-top: 300px;
+    margin-left: 950px;
     border: solid 5px;
     border-color: #fff;
-    height: 55.1%;
+    height: 56.3%;
+  }
+
+  .portifolio3:hover{
+    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
   }
 
   .portifolio4{
     position: absolute;
-    margin-top: 710px;
-    margin-left: 90px;
+    margin-top: 780px;
+    margin-left: 210px;
     border: solid 5px;
     border-color: #fff;
-    height: 55.1%;
+    height: 56.3%;
+  }
+
+  .portifolio4:hover{
+    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
   }
 
   .portifolio5{
     position: absolute;
-    margin-top: 710px;
-    margin-left: 518px;
+    margin-top: 780px;
+    margin-left: 580px;
     border: solid 5px;
     border-color: #fff;
-    height: 55.1%;
+    height: 56.3%;
+  }
+
+  .portifolio5:hover{
+    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
   }
 
   .portifolio6{
     position: absolute;
-    margin-top: 710px;
-    margin-left: 945px;
+    margin-top: 780px;
+    margin-left: 950px;
     border: solid 5px;
     border-color: #fff;
-    height: 55.1%;
+    height: 56.3%;
   }
 
-/*RESPONSIVIDADE ATÉ O MINIMO DA TELA @media (min-width: 400px)  and (max-width:800px) { 
+  .portifolio6:hover{
+    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transition: transform 0.3s ease-in-out;
+  }
+
+ /* RESPONSIVO MINIMO DE TELA @media (min-width: 400px)  and (max-width:800px) { 
 
     .background-slideshow{
         text-align: center;
@@ -459,7 +497,7 @@ hr{
         color: #fff;
         margin-top: 930px;
         width: 100%;
-        height: 370px; ajuste o valor da altura conforme necessário
+        height: 370px; /* ajuste o valor da altura conforme necessário
         background-image: url("img/fundorodape.png " ) ;
         box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
       }

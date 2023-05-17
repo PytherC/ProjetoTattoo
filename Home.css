@@ -2,8 +2,9 @@ body {
     margin: 0px;
     color: #fff;  
     background-color: black;
-    font-family: "Alegreya Sans SC", Sans-serif;}
-
+    font-family: 'Roboto', sans-serif;
+  
+}
 a{
     text-decoration: none;
     color: #fff;
@@ -41,12 +42,13 @@ hr{
     border-radius: 5px;
     border: solid 1px;
     border: #ffffff;
-    font-family: arial;
+    font-family: 'Roboto', sans-serif;
     margin: 20px;
     position: absolute;
     right: 200px;
     transition: background .2s;
     box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
 }
 
 .botao:hover{
@@ -66,6 +68,7 @@ hr{
     height: 50px;
     border-style: none;
     background: none;
+    cursor: pointer;
   }
 
   .botaowpp:hover{
@@ -81,13 +84,14 @@ hr{
     border-radius: 5px;
     border: solid 1px;
     border: #ffffff;
-    font-family: arial;
+    font-family: 'Roboto', sans-serif;
     margin: 1px;
     margin-top: -30px;
     position: absolute;
-    right: 388px;
+    right: 440px;
     transition: background .2s;
     box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
 }
 
 .botaomeio:hover{
@@ -105,13 +109,14 @@ hr{
   border-radius: 5px;
   border: solid 1px;
   border: #ffffff;
-  font-family: arial;
+  font-family: 'Roboto', sans-serif;
   margin: 1px;
   margin-top: 1290px;
   position: absolute;
-  right: 590px;
+  right: 635px;
   transition: background .2s;
   box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+  cursor: pointer;
 }
 
 .botaofinal:hover{
@@ -140,7 +145,7 @@ hr{
     position: absolute;
     margin-top: -80px;
     color: #000000;
-    right: 430px;
+    right: 473px;
     height: 2px;
     border-radius: 2px;
     width: 140px;
@@ -149,9 +154,10 @@ hr{
 .fundob{
     position: absolute;
     margin-top: -550px;
-    right: 1100px;
+    right: 1150px;
     z-index: -1;
-    border-top: 700px solid #c971cc; 
+    border-top: 700px solid #c971cc;
+    color: #000000;
     border-left: 200px solid transparent;
     border-right: 400px solid transparent;
 }
@@ -170,7 +176,8 @@ hr{
     position: absolute;
     margin-top: 100px;
     margin-left: 960px;
-    font-family: "Alegreya Sans SC", Sans-serif;
+    font-family: 'Roboto', sans-serif;
+  
   }
 
   .botaorodape{
@@ -181,12 +188,13 @@ hr{
     border-radius: 5px;
     border: solid 1px;
     border: #ffffff;
-    font-family: arial;
+    font-family: 'Roboto', sans-serif;
     margin: 300px;
     position: absolute;
-    right: -35px;
+    right: 15px;
     transition: background .2s;
     box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
 }
 
 .botaorodape:hover{
@@ -231,6 +239,7 @@ hr{
     position: absolute;
     margin-top: 325px;
     margin-left: 250px;
+    cursor: pointer;
   }
 
   .facebookrodape:hover{
@@ -242,6 +251,7 @@ hr{
     position: absolute;
     margin-top: 320px;
     margin-left: 145px;
+    cursor: pointer;
   }
 
   .instagramrodape:hover{
@@ -257,14 +267,15 @@ hr{
   .artes{
     position: absolute;
     margin-top: 140px;
-    margin-left: 580px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 560px;
+    font-family: 'Great Vibes';
+    font-size: 30px;
   }
 
   .portifolio{
     position: absolute;
     margin-top: 300px;
-    margin-left: 210px;
+    margin-left: 235px;
     border: solid 5px;
     border-color: #fff;
     height: 56.3%;
@@ -278,7 +289,7 @@ hr{
   .portifolio2{
     position: absolute;
     margin-top: 300px;
-    margin-left: 580px;
+    margin-left: 600px;
     border: solid 5px;
     border-color: #fff;
     height: 56.3%;
@@ -292,7 +303,7 @@ hr{
   .portifolio3{
     position: absolute;
     margin-top: 300px;
-    margin-left: 950px;
+    margin-left: 965px;
     border: solid 5px;
     border-color: #fff;
     height: 56.3%;
@@ -306,7 +317,7 @@ hr{
   .portifolio4{
     position: absolute;
     margin-top: 780px;
-    margin-left: 210px;
+    margin-left: 235px;
     border: solid 5px;
     border-color: #fff;
     height: 56.3%;
@@ -320,7 +331,7 @@ hr{
   .portifolio5{
     position: absolute;
     margin-top: 780px;
-    margin-left: 580px;
+    margin-left: 600px;
     border: solid 5px;
     border-color: #fff;
     height: 56.3%;
@@ -334,7 +345,7 @@ hr{
   .portifolio6{
     position: absolute;
     margin-top: 780px;
-    margin-left: 950px;
+    margin-left: 965px;
     border: solid 5px;
     border-color: #fff;
     height: 56.3%;
@@ -345,11 +356,11 @@ hr{
     transition: transform 0.3s ease-in-out;
   }
 
- /* RESPONSIVO MINIMO DE TELA @media (min-width: 400px)  and (max-width:800px) { 
+  @media (min-width: 400px)  and (max-width:600px) {
 
     .background-slideshow{
         text-align: center;
-        background-image: url("/Vscode/img/fundo.png");
+        background-image: url("img/fundoprincipal.png");
         height: 320px;
         transition: background-image 0.4s ease-in-out;
     }
@@ -365,17 +376,17 @@ hr{
         font-family: arial;
         margin: 20px;
         position: absolute;
-        right: 120px;
+        right: 146px;
         transition: background .2s;
         box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
     }
 
       .artes{
         position: absolute;
-        margin-top: 40px;
-        margin-left: 135px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 8px;
+        margin-top: 80px;
+        margin-left: 120px;
+        font-family: 'Great Vibes';
+        font-size: 20px;
       }
 
       #logo{
@@ -393,8 +404,9 @@ hr{
         margin: 25px;
         padding: 50px;
         border-radius: 20px;
-        width: 100px;
+        width: 260px;
         margin-top: 60px;
+        margin-left: 55px;
     }
 
     .texto{
@@ -405,8 +417,8 @@ hr{
     .botaomeio{
         color: #fff;
         background-color: #c971cc;
-        font-size: 6px;
-        padding: 5px 15px;
+        font-size: 10px;
+        padding: 10px 15px;
         border-radius: 2px;
         border: solid 1px;
         border: #ffffff;
@@ -414,7 +426,7 @@ hr{
         margin: 1px;
         margin-top: -32px;
         position: absolute;
-        right: 160px;
+        right: 165px;
         transition: background .2s;
         box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
     }
@@ -425,7 +437,7 @@ hr{
 
     .fundob{
         right: 100px;
-        margin-top: -570px;
+        margin-top: -800px;
         border-top: 665px solid #c971cc;
         color: #000000;
         border-left: 400px solid transparent;
@@ -434,36 +446,22 @@ hr{
         width: 200px;
     }
 
-    .botaowpp{ 
-        position: fixed;
-        z-index: 1;
-        background-color: #000000;
-        right: 30px;
-        bottom: 20px;
-        width: 30px;
-        height: 30px;
-        border-style: none;
-        background: none;
-      }
-
       .portifolio{
         position: absolute;
-        right: 43px;
-        margin-top: 120px;
-        margin-left: 90px;
+        right: 82px;
+        margin-top: 190px;
         border: solid 5px;
         border-color: #fff;
-        height: 47.7%;
+        height: 66.7%;
       }
     
       .portifolio2{
         position: absolute;
-        right: 43px;
-        margin-top: 490px;
-        margin-left: 90px;
+        right: 82px;
+        margin-top: 675px;
         border: solid 5px;
         border-color: #fff;
-        height: 47.7%;
+        height: 66.7%;
       }
     
       .portifolio3{
@@ -481,56 +479,501 @@ hr{
       .portifolio6{
         display: none;
       }
+      
+      .botaofinal{
+        color: #fff;
+        background-color: #c971cc;
+        font-size: 14px;
+        padding: 14px 25px;
+        border-radius: 5px;
+        border: solid 1px;
+        border: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        margin: 1px;
+        margin-top: 1175px;
+        position: absolute;
+        right: 120px;
+        transition: background .2s;
+        box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+        cursor: pointer;
+      }
 
       #listarodape{
-        right: 20px;
-        margin-top: 36px;
+        right: 175px;
+        margin-top: 300px;
       }
 
       .logorodape{
         margin-top: 20px;
-        right: 200px;
+        right: 90px;
       }
 
       .rodape{
         position: absolute;
         color: #fff;
-        margin-top: 930px;
+        margin-top: 1300px;
         width: 100%;
-        height: 370px; /* ajuste o valor da altura conforme necessário
-        background-image: url("img/fundorodape.png " ) ;
+        height: 770px;
+        background-image: url("img/fundorodape02.png " ) ;
         box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
       }
 
+      hr{
+        margin-top: 730px;
+        z-index: 1;
+        width: 380px;
+        margin-left: 48px;
+      }
+
+      .infofinal{
+        font-size: 12px;
+        margin-left: 140px;
+        margin-top: 10px;
+      }
+
       .localrodape{
-        right: 135px;
-        margin-top: 123px;
+        right: 295px;
+        margin-top: 386px;
       }
 
       .telefonerodape{
-        right: 129px;
-        margin-top: 187px;
+        right: 285px;
+        margin-top: 450px;
       }
 
       .instagramrodape{
-        margin-top: 290px;
+        margin-top: 640px;
+        right: 285px;
       }
 
       .facebookrodape{
-        margin-top: 295px;
+        margin-top: 644px;
+        right: 155px;
+      }
+
+      .botaorodape{
+        font-size: 10px;
+        margin-top: 550px;
+        width: 114px;
+        left: -135px;
       }
 
   }
 
-  @media (min-width: 800px)  and (max-width:1200px) {
-    
+  @media (min-width: 600px)  and (max-width:800px) {
+
+    .background-slideshow{
+      text-align: center;
+      background-image: url("img/fundoprincipal.png");
+      height: 550px;
+      transition: background-image 0.4s ease-in-out;
+  }
+
+  .botao{
+    color: #fff;
+    background-color: #c971cc;
+    font-size: 12px;
+    padding: 11px 22px;
+    border-radius: 5px;
+    border: solid 1px;
+    border: #ffffff;
+    font-family: arial;
+    margin: 20px;
+    position: absolute;
+    right: 175px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+}
+
+  .artes{
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 170px;
+    font-family: 'Great Vibes';
+    font-size: 20px;
+  }
+
+  #logo{
+    margin-top: 100px;
+    width: 370px;
+}
+
+.meio{
+    background-color:#c971cc;
+    color:#000000;
+    height: 5px;
+}
+
+.leao{
+    margin: 25px;
+    padding: 50px;
+    border-radius: 20px;
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 65px;
+}
+
+.texto{
+    margin: 70px;
+    font-size: 12px;
+}
+
+.botaomeio{
+    color: #fff;
+    background-color: #c971cc;
+    font-size: 10px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: solid 1px;
+    border: #ffffff;
+    font-family: arial;
+    margin: 1px;
+    margin-top: -32px;
+    position: absolute;
+    right: 225px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+}
+
+.fundoa{
+    display: none;
+}
+
+.fundob{
+    right: 150px;
+    margin-top: -850px;
+    border-top: 600px solid #c971cc;
+    color: #000000;
+    border-left: 400px solid transparent;
+    border-right: 500px solid transparent;
+    height: 10px;
+    width: 200px;
+}
+
+  .portifolio{
+    position: absolute;
+    right: 135px;
+    margin-top: 220px;
+    border: solid 5px;
+    border-color: #fff;
+    height: 66.7%;
+  }
+
+  .portifolio2{
+    position: absolute;
+    right: 135px;
+    margin-top: 710px;
+    border: solid 5px;
+    border-color: #fff;
+    height: 66.7%;
+  }
+
+  .portifolio3{
+    display: none;
+  }
+
+  .portifolio4{
+    display: none;
+  }
+
+  .portifolio5{
+    display: none;
+  }
+
+  .portifolio6{
+    display: none;
+  }
+  
+  .botaofinal{
+    color: #fff;
+    background-color: #c971cc;
+    font-size: 14px;
+    padding: 14px 25px;
+    border-radius: 5px;
+    border: solid 1px;
+    border: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 1px;
+    margin-top: 1230px;
+    position: absolute;
+    right: 170px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
+  }
+
+  #listarodape{
+    right: 55px;
+    margin-top: 65px;
+  }
+
+  .logorodape{
+    margin-top: 20px;
+    right: 290px;
+  }
+
+  .rodape{
+    position: absolute;
+    color: #fff;
+    margin-top: 1375px;
+    width: 100%;
+    height: 550px;
+    background-image: url("img/fundorodape02.png " ) ;
+    box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
+  }
+
+  hr{
+    margin-top: 500px;
+    z-index: 1;
+    width: 480px;
+    margin-left: 48px;
+  }
+
+  .infofinal{
+    font-size: 12px;
+    margin-left: 190px;
+    margin-top: 10px;
+  }
+
+  .localrodape{
+    right: 170px;
+    margin-top: 152px;
+  }
+
+  .telefonerodape{
+    right: 163px;
+    margin-top: 220px;
+  }
+
+  .instagramrodape{
+    margin-top: 350px;
+    right: 465px;
+  }
+
+  .facebookrodape{
+    margin-top: 353px;
+    right: 350px;
+  }
+
+  .botaorodape{
+    font-size: 10px;
+    margin-top: 365px;
+    width: 114px;
+    left: 100px;
+  }
 
   }
 
-  @media (min-width: 1200px)  and (max-width:1450px) {
+  @media (min-width: 800px)  and (max-width:1000px) {
     
+    .background-slideshow{
+      text-align: center;
+      background-image: url("img/fundoprincipal.png");
+      height: 620px;
+      transition: background-image 0.4s ease-in-out;
+  }
+
+  .botao{
+    color: #fff;
+    background-color: #c971cc;
+    font-size: 12px;
+    padding: 11px 22px;
+    border-radius: 5px;
+    border: solid 1px;
+    border: #ffffff;
+    font-family: arial;
+    margin: 20px;
+    position: absolute;
+    right: 270px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+}
+
+  .artes{
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 170px;
+    font-family: 'Great Vibes';
+    font-size: 20px;
+  }
+
+  #logo{
+    margin-top: 100px;
+    width: 450px;
+}
+
+.meio{
+    background-color:#c971cc;
+    color:#000000;
+    height: 5px;
+}
+
+.leao{
+    margin: 25px;
+    padding: 50px;
+    border-radius: 20px;
+    width: 330px;
+    margin-top: 60px;
+    margin-left: 65px;
+}
+
+.texto{
+    margin: 70px;
+    font-size: 12px;
+}
+
+.botaomeio{
+    color: #fff;
+    background-color: #c971cc;
+    font-size: 10px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: solid 1px;
+    border: #ffffff;
+    font-family: arial;
+    margin: 1px;
+    margin-top: -32px;
+    position: absolute;
+    right: 225px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+}
+
+.fundoa{
+    display: none;
+}
+
+.fundob{
+    right: 295px;
+    margin-top: -520px;
+    border-top: 600px solid #c971cc;
+    color: #000000;
+    border-left: 400px solid transparent;
+    border-right: 540px solid transparent;
+    height: 10px;
+    width: 200px;
+}
+
+  .portifolio{
+    position: absolute;
+    right: 135px;
+    margin-top: 220px;
+    border: solid 5px;
+    border-color: #fff;
+    height: 66.7%;
+  }
+
+  .portifolio2{
+    position: absolute;
+    right: 135px;
+    margin-top: 710px;
+    border: solid 5px;
+    border-color: #fff;
+    height: 66.7%;
+  }
+
+  .portifolio3{
+    display: none;
+  }
+
+  .portifolio4{
+    display: none;
+  }
+
+  .portifolio5{
+    display: none;
+  }
+
+  .portifolio6{
+    display: none;
+  }
+  
+  .botaofinal{
+    color: #fff;
+    background-color: #c971cc;
+    font-size: 14px;
+    padding: 14px 25px;
+    border-radius: 5px;
+    border: solid 1px;
+    border: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 1px;
+    margin-top: 1230px;
+    position: absolute;
+    right: 170px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
+  }
+
+  #listarodape{
+    right: 55px;
+    margin-top: 65px;
+  }
+
+  .logorodape{
+    margin-top: 20px;
+    right: 290px;
+  }
+
+  .rodape{
+    position: absolute;
+    color: #fff;
+    margin-top: 1375px;
+    width: 100%;
+    height: 550px;
+    background-image: url("img/fundorodape02.png " ) ;
+    box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
+  }
+
+  hr{
+    margin-top: 500px;
+    z-index: 1;
+    width: 480px;
+    margin-left: 48px;
+  }
+
+  .infofinal{
+    font-size: 12px;
+    margin-left: 190px;
+    margin-top: 10px;
+  }
+
+  .localrodape{
+    right: 170px;
+    margin-top: 152px;
+  }
+
+  .telefonerodape{
+    right: 163px;
+    margin-top: 220px;
+  }
+
+  .instagramrodape{
+    margin-top: 350px;
+    right: 465px;
+  }
+
+  .facebookrodape{
+    margin-top: 353px;
+    right: 350px;
+  }
+
+  .botaorodape{
+    font-size: 10px;
+    margin-top: 365px;
+    width: 114px;
+    left: 100px;
+  }
 
   }
 
+  @media (min-width: 1000px)  and (max-width:1200px) {
+
+  }
+
+  @media (min-width: 1200px)  and (max-width:1400px) {
+    
+  }
 
 

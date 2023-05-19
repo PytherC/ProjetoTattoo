@@ -1,10 +1,14 @@
 body {
     margin: 0px;
-    color: #fff;  
     background-color: black;
     font-family: 'Roboto', sans-serif;
-  
+    color: white;
 }
+
+img{
+  max-width: 100%;
+}
+
 a{
     text-decoration: none;
     color: #fff;
@@ -14,22 +18,74 @@ ul li{
     list-style-type: none;
 }
 
-hr{
-  margin-top: 430px;
-  z-index: 1;
-  width: 1200px;
-  margin-left: 110px;
-}
+/*FUNÇÕES GERAIS*/
 
 .background-slideshow{
     text-align: center;
     background-image: url("img/fundoprincipal02.png");
     height: 720px;
     transition: background-image 0.4s ease-in-out;
-    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    width: 100%;
 }
 
-#logo{
+.apresentacao{
+  font-size: 15px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: auto, auto, 1fr;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.fotoapresentacao{
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(65, 65, 65, 0.5);
+  margin-top: 55px;
+  grid-row: 1/3;
+  max-width: 100%;
+  height: auto;
+}
+
+.texto{
+  grid-column: 2;
+  padding: 40px;
+  position: relative;
+}
+
+.detalhe{
+  width: 60px;
+  height: 2.5px;
+  position: absolute;
+  background-color: #e69ee9;
+  top: -35px;
+  right: 65px;
+}
+
+.agendeinicio{
+  text-align: center;
+  place-self: center;
+  padding: 13px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background .2s;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+  cursor: pointer;
+  color: #fff;
+  background-color: #c971cc;
+  position: relative;
+}
+
+.agendeinicio:hover{
+  background-color: #e69ee9;
+  color: #4d4c4c;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/*#logo{
     margin-top: 80px;
 }
 
@@ -54,18 +110,16 @@ hr{
 .botao:hover{
     background-color: #e69ee9;
     color: #cac2c2;
-    transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima
     transition: transform 0.3s ease-in-out;
-}
+}*/
 
 .botaowpp { 
     position: fixed;
     z-index: 1;
     background-color: #000000;
     right: 20px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
+    bottom: 2.5px;
     border-style: none;
     background: none;
     cursor: pointer;
@@ -76,30 +130,7 @@ hr{
     transition: transform 0.3s ease-in-out;
   }
 
-.botaomeio{
-    color: #fff;
-    background-color: #c971cc;
-    font-size: 14px;
-    padding: 14px 25px;
-    border-radius: 5px;
-    border: solid 1px;
-    border: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    margin: 1px;
-    margin-top: -30px;
-    position: absolute;
-    right: 440px;
-    transition: background .2s;
-    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
-    cursor: pointer;
-}
-
-.botaomeio:hover{
-    background-color: #e69ee9;
-    color: #cac2c2;
-    transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
-    transition: transform 0.3s ease-in-out;
-}
+/*
 
 .botaofinal{
   color: #fff;
@@ -122,44 +153,8 @@ hr{
 .botaofinal:hover{
   background-color: #e69ee9;
   color: #cac2c2;
-  transform: scale(1.1); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+  transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
-}
-
-.leao{
-    margin: 90px;
-    padding: 50px;
-    border-radius: 55px;
-    width: 390px;
-    
-}
-
-.texto{
-    margin: 145px;
-    font-size: 18px;
-}
-
-.fundoa{
-    background-color: #c971cc;
-    color: #c971cc;
-    position: absolute;
-    margin-top: -80px;
-    color: #000000;
-    right: 473px;
-    height: 2px;
-    border-radius: 2px;
-    width: 140px;
-}
-
-.fundob{
-    position: absolute;
-    margin-top: -550px;
-    right: 1150px;
-    z-index: -1;
-    border-top: 700px solid #c971cc;
-    color: #000000;
-    border-left: 200px solid transparent;
-    border-right: 400px solid transparent;
 }
 
 .rodape{
@@ -167,7 +162,7 @@ hr{
     color: #fff;
     margin-top: 1430px;
     width: 100%;
-    height: 480px; /* ajuste o valor da altura conforme necessário */
+    height: 480px; ajuste o valor da altura conforme necessário 
     background-image: url("img/fundorodape02.png " ) ;
     box-shadow: 0px 0px 10px rgba(118, 118, 118, 0.5);
   }
@@ -200,7 +195,7 @@ hr{
 .botaorodape:hover{
   background-color: #e69ee9;
   color: #cac2c2;
-  transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+  transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -243,7 +238,7 @@ hr{
   }
 
   .facebookrodape:hover{
-    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
   }
 
@@ -255,105 +250,315 @@ hr{
   }
 
   .instagramrodape:hover{
-    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+    transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
   }
 
-  h4{
-    color: #c971cc;
-    font-family: arial;
+  */
+  .textoportifolio{
+  text-align: center;
+  grid-column: 1/-1;
+  margin: 50px;
+  font-family: 'Great Vibes';
+  font-size: 40px;
+  color: #b0afaf;
+}
+
+.portifolio{
+    display: grid;
+    grid-template-columns: 325px 325px 325px;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 125px;
+    color: white;
   }
 
-  .artes{
-    position: absolute;
-    margin-top: 140px;
-    margin-left: 560px;
-    font-family: 'Great Vibes';
-    font-size: 30px;
-  }
+#img0{
+  border: solid 5px white;
+  display: grid;
+}
 
-  .portifolio{
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 235px;
-    border: solid 5px;
-    border-color: #fff;
-    height: 56.3%;
-  }
-
-.portifolio:hover{
-  transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
+#img0:hover{
+  transform: scale(1.1); 
   transition: transform 0.3s ease-in-out;
 }
 
-  .portifolio2{
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 600px;
-    border: solid 5px;
-    border-color: #fff;
-    height: 56.3%;
+#img01{
+  border: solid 5px white;
+  display: grid;
+}
+
+#img01:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#img02{
+  border: solid 5px white;
+  display: grid;
+}
+
+#img02:hover{
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
+}
+
+#img03{
+  border: solid 5px white;
+  display: grid;
+}
+
+#img03:hover{
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
+}
+
+#img04{
+  border: solid 5px white;
+  display: grid;
+}
+
+#img04:hover{
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
+}
+
+#img05{
+  border: solid 5px white;
+  display: grid;
+}
+
+#img05:hover{
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.agende{
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 5px;
+  grid-column: 2;
+  transition: background .2s;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+  cursor: pointer;
+  color: #fff;
+  background-color: #c971cc;
+}
+
+.agende:hover{
+  background-color: #e69ee9;
+  color: #4d4c4c;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+  /*@media (max-width:400px) {
+  
+    .background-slideshow{
+      text-align: center;
+      background-image: url("img/fundoprincipal.png");
+      height: 350px;
+      transition: background-image 0.4s ease-in-out;
+  }
+
+  .botao{
+      color: #fff;
+      background-color: #c971cc;
+      font-size: 9px;
+      padding: 10px 21px;
+      border-radius: 5px;
+      border: solid 1px;
+      border: #ffffff;
+      font-family: arial;
+      margin: 20px;
+      position: absolute;
+      right: 60px;
+      transition: background .2s;
+      box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+  }
+
+    .artes{
+      position: absolute;
+      margin-top: 80px;
+      margin-left: 120px;
+      font-family: 'Great Vibes';
+      font-size: 20px;
     }
 
-  .portifolio2:hover{
-    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
-    transition: transform 0.3s ease-in-out;
+    #logo{
+      margin-top: 80px;
+      width: 200px;
   }
 
-  .portifolio3{
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 965px;
-    border: solid 5px;
-    border-color: #fff;
-    height: 56.3%;
+  .meio{
+      background-color:#c971cc;
+      color:#000000;
+      height: 5px;
   }
 
-  .portifolio3:hover{
-    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
-    transition: transform 0.3s ease-in-out;
+  .leao{
+      margin: 25px;
+      padding: 50px;
+      border-radius: 20px;
+      width: 260px;
+      margin-top: 60px;
+      margin-left: 55px;
   }
 
-  .portifolio4{
-    position: absolute;
-    margin-top: 780px;
-    margin-left: 235px;
-    border: solid 5px;
-    border-color: #fff;
-    height: 56.3%;
+  .texto{
+      margin: 70px;
+      font-size: 12px;
   }
 
-  .portifolio4:hover{
-    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
-    transition: transform 0.3s ease-in-out;
+  .botaomeio{
+      color: #fff;
+      background-color: #c971cc;
+      font-size: 10px;
+      padding: 10px 15px;
+      border-radius: 2px;
+      border: solid 1px;
+      border: #ffffff;
+      font-family: arial;
+      margin: 1px;
+      margin-top: -32px;
+      position: absolute;
+      right: 165px;
+      transition: background .2s;
+      box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
   }
 
-  .portifolio5{
-    position: absolute;
-    margin-top: 780px;
-    margin-left: 600px;
-    border: solid 5px;
-    border-color: #fff;
-    height: 56.3%;
+  .fundoa{
+      display: none;
   }
 
-  .portifolio5:hover{
-    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
-    transition: transform 0.3s ease-in-out;
+  .fundob{
+      right: 100px;
+      margin-top: -800px;
+      border-top: 665px solid #c971cc;
+      color: #000000;
+      border-left: 400px solid transparent;
+      border-right: 400px solid transparent;
+      height: 10px;
+      width: 200px;
   }
 
-  .portifolio6{
-    position: absolute;
-    margin-top: 780px;
-    margin-left: 965px;
-    border: solid 5px;
-    border-color: #fff;
-    height: 56.3%;
-  }
+    .portifolio{
+      position: absolute;
+      right: 82px;
+      margin-top: 190px;
+      border: solid 5px;
+      border-color: #fff;
+      height: 69.8%;
+    }
+  
+    .portifolio2{
+      position: absolute;
+      right: 82px;
+      margin-top: 675px;
+      border: solid 5px;
+      border-color: #fff;
+      height: 69.8%;
+    }
+  
+    .portifolio3{
+      display: none;
+    }
+  
+    .portifolio4{
+      display: none;
+    }
+  
+    .portifolio5{
+      display: none;
+    }
+  
+    .portifolio6{
+      display: none;
+    }
+    
+    .botaofinal{
+      color: #fff;
+      background-color: #c971cc;
+      font-size: 14px;
+      padding: 14px 25px;
+      border-radius: 5px;
+      border: solid 1px;
+      border: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      margin: 1px;
+      margin-top: 1175px;
+      position: absolute;
+      right: 120px;
+      transition: background .2s;
+      box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+      cursor: pointer;
+    }
 
-  .portifolio6:hover{
-    transform: scale(1.2); /* Aumenta o tamanho do elemento quando o mouse passar por cima */
-    transition: transform 0.3s ease-in-out;
+    #listarodape{
+      right: 175px;
+      margin-top: 300px;
+    }
+
+    .logorodape{
+      margin-top: 20px;
+      right: 90px;
+    }
+
+    .rodape{
+      position: absolute;
+      color: #fff;
+      margin-top: 1300px;
+      width: 100%;
+      height: 770px;
+      background-image: url("img/fundorodape02.png " ) ;
+      box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.5);
+    }
+
+    hr{
+      margin-top: 730px;
+      z-index: 1;
+      width: 100px;
+      margin-left: 48px;
+    }
+
+    .infofinal{
+      font-size: 12px;
+      margin-left: 140px;
+      margin-top: 10px;
+    }
+
+    .localrodape{
+      right: 295px;
+      margin-top: 386px;
+    }
+
+    .telefonerodape{
+      right: 285px;
+      margin-top: 450px;
+    }
+
+    .instagramrodape{
+      margin-top: 640px;
+      right: 285px;
+    }
+
+    .facebookrodape{
+      margin-top: 644px;
+      right: 155px;
+    }
+
+    .botaorodape{
+      font-size: 10px;
+      margin-top: 550px;
+      width: 114px;
+      left: -135px;
+    }
+
+  
+  
+  
   }
 
   @media (min-width: 400px)  and (max-width:600px) {
@@ -452,7 +657,7 @@ hr{
         margin-top: 190px;
         border: solid 5px;
         border-color: #fff;
-        height: 66.7%;
+        height: 69.8%;
       }
     
       .portifolio2{
@@ -461,7 +666,7 @@ hr{
         margin-top: 675px;
         border: solid 5px;
         border-color: #fff;
-        height: 66.7%;
+        height: 69.8%;
       }
     
       .portifolio3{
@@ -656,7 +861,7 @@ hr{
     margin-top: 220px;
     border: solid 5px;
     border-color: #fff;
-    height: 66.7%;
+    height: 69.9%;
   }
 
   .portifolio2{
@@ -665,7 +870,7 @@ hr{
     margin-top: 710px;
     border: solid 5px;
     border-color: #fff;
-    height: 66.7%;
+    height: 69.9%;
   }
 
   .portifolio3{

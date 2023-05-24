@@ -1,9 +1,9 @@
-var images = ['fundo.png', 'tattoofundo.png ', 'tattoofundo2.png']; //Define as imagens de fundo
-var smallScreenImages = ['iconewpp.png']; //Define as imagens de fundo caso a tela seja menor que 500px
-var mediumScreenImages = ['logo.png']; //Define as imagens de fundo caso a tela seja 500px até 800px
-var largeScreenImages = ['iconewpp.png']; //Define as imagens de fundo caso a tela seja 800px ate 1200px
+var images = ['fundoprincipal02.png', 'fundoprincipal.png ', 'fundoprincipal03.png']; //Define as imagens de fundo
+var smallScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; //Define as imagens de fundo caso a tela seja menor que 500px
+var mediumScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; //Define as imagens de fundo caso a tela seja 500px até 800px
+var largeScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; //Define as imagens de fundo caso a tela seja 800px ate 1200px
 
-setInterval(changeBackground, 5000);
+setInterval(changeBackground, 4000);
 
 function changeBackground() {
   var randomIndex;
@@ -26,3 +26,15 @@ function changeBackground() {
   
   document.querySelector('.background-slideshow').style.backgroundImage = 'url("img/' + randomImage + '")';
 }
+
+$(window).scroll(function() {
+  var windowTop = $(this).scrollTop() ;
+  $('.anime').each(function(){
+      if(windowTop > $(this).offset().top - 550) {
+          $(this). addClass ('anime-init');
+      } else {
+          $(this).removeClass ('anime-init');
+      }
+  
+  });
+});

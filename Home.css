@@ -23,7 +23,7 @@ ul li{
 .background-slideshow{
     text-align: center;
     background-image: url("img/fundoprincipal02.png");
-    height: 720px;
+    height: 800px;
     transition: background-image 0.4s ease-in-out;
     width: 100%;
     background-position: center top;
@@ -66,7 +66,7 @@ ul li{
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: auto, auto, 1fr;
   justify-content: center;
-  margin-top: 5.6rem;
+  margin-top: 8.6rem;
   gap: 1.2rem;
 }
 
@@ -89,7 +89,7 @@ ul li{
   display: none;
 }
 
-.texto::before{
+/*.texto::before{
     content: "";
     width: 380px;
     height: 500px;
@@ -100,7 +100,7 @@ ul li{
     z-index: -1;
     border-radius: 4px;
     opacity: 0.6;
-  }
+  }*/
 
 
 .agendeinicio{
@@ -109,6 +109,7 @@ ul li{
   padding: 13px;
   font-size: 0.9rem;
   border-radius: 5px;
+  margin-top: 40px;
   transition: background .2s;
   box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
   cursor: pointer;
@@ -132,6 +133,18 @@ ul li{
   background-color: #e69ee9;
   top: -35px;
   right: 65px;
+}
+
+.anime{
+  opacity: 0;
+  transform: translate3d(0px, -50px, 0px);
+}
+
+.anime-init{
+  opacity: 1;
+  transition: .4s all ease;
+  transform: translate3d(0px, 50px, 0px);
+
 }
 
 .botaowpp { 
@@ -175,19 +188,19 @@ ul li{
   color: #cac2c2;
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
-}
+}*/
 
 .rodape{
     position: absolute;
     color: #fff;
     margin-top: 1430px;
     width: 100%;
-    height: 480px; ajuste o valor da altura conforme necessário 
+    height: 480px;
     background-image: url("img/fundorodape02.png " ) ;
     box-shadow: 0px 0px 10px rgba(118, 118, 118, 0.5);
   }
   
-  #listarodape{
+  /*#listarodape{
     position: absolute;
     margin-top: 100px;
     margin-left: 960px;
@@ -291,7 +304,7 @@ ul li{
     grid-template-columns: 325px 325px 325px;
     gap: 25px;
     justify-content: center;
-    margin-top: 125px;
+    margin-top: 100px;
     color: white;
   }
 
@@ -381,7 +394,7 @@ ul li{
       text-align: center;
       background-image: url("img/fundoprincipal02.png");
       background: no-repeat;
-      height: 400px;
+      height: 550px;
       transition: background-image 0.4s ease-in-out;
       width: 100%;
       background-position: center top;
@@ -398,7 +411,7 @@ ul li{
    }
 
     .apresentacao{
-      margin-top: 50px;
+      margin-top: 150px;
       font-size: 1rem;
       color: white;
       display: grid;

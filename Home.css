@@ -239,7 +239,8 @@ li img {
   }
 
 #img0{
-  border: solid 5px white;
+  border: solid  rgb(7, 7, 7);
+  border-radius: 6px;
   display: grid;
 }
 
@@ -249,7 +250,8 @@ li img {
 }
 
 #img01{
-  border: solid 5px white;
+  border: solid  rgb(7, 7, 7);
+  border-radius: 6px;
   display: grid;
 }
 
@@ -259,7 +261,8 @@ li img {
 }
 
 #img02{
-  border: solid 5px white;
+  border: solid  rgb(7, 7, 7);
+  border-radius: 6px;
   display: grid;
 }
 
@@ -269,7 +272,8 @@ li img {
 }
 
 #img03{
-  border: solid 5px white;
+  border: solid  rgb(7, 7, 7);
+  border-radius: 6px;
   display: grid;
 }
 
@@ -279,7 +283,8 @@ li img {
 }
 
 #img04{
-  border: solid 5px white;
+  border: solid  rgb(7, 7, 7);
+  border-radius: 6px;
   display: grid;
 }
 
@@ -289,7 +294,8 @@ li img {
 }
 
 #img05{
-  border: solid 5px white;
+  border: solid  rgb(7, 7, 7);
+  border-radius: 6px;
   display: grid;
 }
 
@@ -384,7 +390,176 @@ li img {
 }
 
 
+@media (min-width: 200px) and (max-width:299px) {
+  .background-slideshow{
+    text-align: center;
+    background-image: url("img/fundoprincipal02.png");
+    background: no-repeat;
+    height: 450px;
+    transition: background-image 0.4s ease-in-out;
+    width: 100%;
+    background-position: center top;
+}
 
+ .logo{
+  justify-content: center;
+  margin-top: 100px;
+  width: 275px;
+ }
+
+ .menu-li{
+  font-size: 1rem;
+  font-family: 'Great Vibes';
+  position: fixed;
+  z-index: 2;
+  gap: 0.5px;
+}
+
+.menu-li a{
+  padding: 1px;
+  border-radius: 5px;
+  transition: color .2s;
+  transition: background .2s;
+}
+
+ .agendetop{
+  display: none;
+ }
+
+  .apresentacao{
+    margin-top: 50px;
+    font-size: 1rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    position: relative;
+  }
+
+  .fotoapresentacao{
+    grid-column: 1;
+    }
+
+  .texto{
+    grid-column: 2;
+    padding: 20px;
+    position: relative;
+    display: none;
+  }
+
+  .textocelular{
+    display: block;
+  }
+
+  .agendeinicio{
+    margin: 45px;
+    margin-top:75px;
+    text-align: center;
+    place-self: center;
+    grid-column: 1;
+    padding: 13px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
+    color: #fff;
+    background-color: #c971cc;
+    position: relative;
+  }
+  
+  .agendeinicio:hover{
+    background-color: #e69ee9;
+    color: #4d4c4c;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .agendeinicio::before{
+    content: "";
+    width: 3.7rem;
+    height: 0.2rem;
+    position: absolute;
+    background-color: #e69ee9;
+    top: -30px;
+    right: 65px;
+  }
+
+  .portfolio{
+    margin-top: -60px;
+    display: grid;
+    grid-template-columns: 300px;
+    transform: scale(0.9);
+  }
+
+  .textoportfolio{
+    margin: 0px;
+    padding-bottom: 40px;
+    font-family: 'Great Vibes';
+    font-size: 2rem;
+    color: #ffffff;
+    font-style: italic;
+  }
+
+  .agende{
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+    grid-column: 1;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
+    color: #fff;
+    background-color: #c971cc;
+  }
+  .rodape{
+    color: #fff;
+    margin-top: 0px;
+    width: 100%;
+    height: 960px;
+    background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
+  }
+
+  .gridrodape{
+    display: grid;
+    grid-template-columns: 280px;
+    gap: 10px;
+  }
+
+  .listamenu{
+    grid-column: 1;
+    place-self: center;
+    grid-row: 2;
+    margin-top: -10px;
+   }
+   
+   .listacontato{
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+    text-align: center;
+   }
+   
+   .logoeredes{
+    place-self: center;
+    grid-column: 1;
+    position: relative;
+    right: -10px;
+    grid-row: 3;
+    margin-top: -70px;
+   }
+
+   .facebook{
+    position: absolute;
+    right: 50px;
+  }
+  
+  .instagram{
+    position: absolute;
+    right: 190px;
+  }
+}
 
 @media (min-width: 300px)  and (max-width:400px) {
 
@@ -556,6 +731,57 @@ li img {
     position: absolute;
     right: 190px;
   }
+
+  .portfolio{
+    display: grid;
+    grid-template-columns: 175px 175px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 75px;
+    color: white;
+  }
+
+#img0{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img01{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img02{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img03{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img04{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img05{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+.agende{
+  font-size: 14px;
+  grid-column: 1/-1;
+}
+
 }
 
 @media (min-width: 401px)  and (max-width:460px) {
@@ -595,7 +821,7 @@ li img {
  }
 
   .apresentacao{
-    margin-top: 150px;
+    margin-top: 75px;
     font-size: 1rem;
     color: white;
     display: grid;
@@ -653,13 +879,6 @@ li img {
     right: 65px;
   }
 
-  .portfolio{
-    margin-top: -60px;
-    display: grid;
-    grid-template-columns: 300px;
-    transform: scale(0.9);
-  }
-
   .textoportfolio{
     margin: 0px;
     padding-bottom: 40px;
@@ -683,7 +902,7 @@ li img {
   }
   .rodape{
     color: #fff;
-    margin-top: 0px;
+    margin-top: 150px;
     width: 100%;
     height: 900px;
     background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
@@ -717,6 +936,57 @@ li img {
     grid-row: 3;
     margin-top: -70px;
    }
+
+   .portfolio{
+    display: grid;
+    grid-template-columns: 175px 175px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+  }
+
+#img0{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img01{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img02{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img03{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img04{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+#img05{
+  display: grid;
+  width: 170px;
+  height: 245px;
+}
+
+.agende{
+  font-size: 14px;
+  grid-column: 1/-1;
+}
+
 
 }
 
@@ -758,7 +1028,7 @@ li img {
    }
 
     .apresentacao{
-      margin-top: 150px;
+      margin-top: 75px;
       font-size: 1rem;
       color: white;
       display: grid;
@@ -816,13 +1086,6 @@ li img {
       right: 65px;
     }
 
-    .portfolio{
-      margin-top: -60px;
-      display: grid;
-      grid-template-columns: 300px;
-      transform: scale(0.9);
-    }
-
     .textoportfolio{
       margin: 0px;
       padding-bottom: 40px;
@@ -847,7 +1110,7 @@ li img {
 
     .rodape{
       color: #fff;
-      margin-top: 0px;
+      margin-top: 150px;
       width: 100%;
       height: 900px;
       background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
@@ -881,6 +1144,56 @@ li img {
       grid-row: 3;
       margin-top: -70px;
      }
+
+     .portfolio{
+      display: grid;
+      grid-template-columns: 175px 175px;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 30px;
+      color: white;
+    }
+  
+  #img0{
+    display: grid;
+    width: 170px;
+    height: 245px;
+  }
+  
+  #img01{
+    display: grid;
+    width: 170px;
+    height: 245px;
+  }
+  
+  #img02{
+    display: grid;
+    width: 170px;
+    height: 245px;
+  }
+  
+  #img03{
+    display: grid;
+    width: 170px;
+    height: 245px;
+  }
+  
+  #img04{
+    display: grid;
+    width: 170px;
+    height: 245px;
+  }
+  
+  #img05{
+    display: grid;
+    width: 170px;
+    height: 245px;
+  }
+  
+  .agende{
+    font-size: 14px;
+    grid-column: 1/-1;
+  }  
 
 }
 
@@ -972,13 +1285,6 @@ li img {
       right: 65px;
     }
 
-    .portfolio{
-      margin-top: -60px;
-      display: grid;
-      grid-template-columns: 300px;
-      transform: scale(0.9);
-    }
-
     .textoportfolio{
       margin: 0px;
       padding-bottom: 40px;
@@ -1003,7 +1309,7 @@ li img {
 
     .rodape{
       color: #fff;
-      margin-top: 0px;
+      margin-top: 150px;
       width: 100%;
       height: 950px;
       background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
@@ -1037,6 +1343,57 @@ li img {
       grid-row: 3;
       margin-top: -70px;
      }
+
+     .portfolio{
+      display: grid;
+      grid-template-columns: 165px 165px 165px;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 75px;
+      color: white;
+    }
+  
+  #img0{
+    display: grid;
+    width: 200px;
+    height: 260px;
+  }
+  
+  #img01{
+    display: grid;
+    width: 200px;
+    height: 260px;
+  }
+  
+  #img02{
+    display: grid;
+    width: 200px;
+    height: 260px;
+  }
+  
+  #img03{
+    display: grid;
+    width: 200px;
+    height: 260px;
+  }
+  
+  #img04{
+    display: grid;
+    width: 200px;
+    height: 260px;
+  }
+  
+  #img05{
+    display: grid;
+    width: 200px;
+    height: 260px;
+  }
+  
+  .agende{
+    font-size: 12px;
+    grid-column: 2;
+  }
+  
 
 }
 
@@ -1112,23 +1469,6 @@ li img {
       top: -23px;
       right: 65px;
     }
-
-    .portfolio{
-      margin-top: 0px;
-      display: grid;
-      gap: 30px;
-      grid-template-columns: 300px 300px;
-      transform: scale(0.9);
-    }
-
-    .textoportfolio{
-      margin: 0px;
-      padding-bottom: 40px;
-      font-family: 'Great Vibes';
-      font-size: 2rem;
-      color: #ffffff;
-      font-style: italic;
-    }
   
     .agende{
       text-align: center;
@@ -1179,6 +1519,45 @@ li img {
       grid-row: 3;
       margin-top: -70px;
      }
+
+     .portfolio{
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 75px;
+      color: white;
+      transform: scale(0.9);
+    }
+  
+  #img0{
+    display: grid;
+  }
+  
+  #img01{
+    display: grid;
+  }
+  
+  #img02{
+    display: grid;
+  }
+  
+  #img03{
+    display: grid;
+  }
+  
+  #img04{
+    display: grid;
+  }
+  
+  #img05{
+    display: grid;
+  }
+  
+  .agende{
+    font-size: 14px;
+    grid-column: 2;
+  }
 
 }
 
@@ -1431,5 +1810,6 @@ li img {
     }
 
 }
+
 
 

@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    background-color: #000000;
+    background-image: radial-gradient( #000000, #000000, #2c2c2c);
     color: white;
 }
 
@@ -16,6 +16,16 @@ a{
 
 ul li{
     list-style-type: none;
+    padding: 10px;
+}
+
+h4{
+  margin: 0px;
+  padding: 5px;
+}
+
+li img {
+  margin-right: 8px; /* Espaçamento opcional entre a imagem e o texto */
 }
 
 /*FUNÇÕES GERAIS*/
@@ -23,16 +33,41 @@ ul li{
 .background-slideshow{
     text-align: center;
     background-image: url("img/fundoprincipal02.png");
-    height: 800px;
+    height: 900px;
     transition: background-image 0.4s ease-in-out;
     width: 100%;
     background-position: center top;
     position: relative;
 }
 
+.menu-li{
+  font-size: 1.7rem;
+  font-family: 'Great Vibes';
+  position: absolute;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  gap: 20px;
+}
+
+.menu-li a{
+  padding: 10px;
+  border-radius: 30px;
+  transition: color .2s;
+  transition: background .2s;
+}
+
+.menu-li a:hover{
+  transition: transform 0.3s ease-in-out;
+  color: #000000;
+  transition: color .1s;
+  background-color: #deb9df;
+  transition: background .2s;
+}
+
 .logo{
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 
 .agendetop{
@@ -59,6 +94,22 @@ ul li{
     transition: transform 0.3s ease-in-out;
 }
 
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #e69ee9;
+  }
+  50% {
+    box-shadow: 0 0 20px #e69ee9;
+  }
+  100% {
+    box-shadow: 0 0 5px #e69ee9;
+  }
+}
+
+.agendetop {
+  animation: glowing 1.5s infinite;
+}
+
 .apresentacao{
   font-size: 1rem;
   color: white;
@@ -68,6 +119,7 @@ ul li{
   justify-content: center;
   margin-top: 8.6rem;
   gap: 1.2rem;
+  position: relative;
 }
 
 .fotoapresentacao{
@@ -88,20 +140,6 @@ ul li{
 .textocelular{
   display: none;
 }
-
-/*.texto::before{
-    content: "";
-    width: 380px;
-    height: 500px;
-    position: absolute;
-    background-color: #e69ee9;
-    top: 2rem;
-    right: 40rem;
-    z-index: -1;
-    border-radius: 4px;
-    opacity: 0.6;
-  }*/
-
 
 .agendeinicio{
   text-align: center;
@@ -135,6 +173,22 @@ ul li{
   right: 65px;
 }
 
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #e69ee9;
+  }
+  50% {
+    box-shadow: 0 0 20px #e69ee9;
+  }
+  100% {
+    box-shadow: 0 0 5px #e69ee9;
+  }
+}
+
+.agendeinicio{
+  animation: glowing 1.5s infinite;
+}
+
 .anime{
   opacity: 0;
   transform: translate3d(0px, -50px, 0px);
@@ -163,133 +217,7 @@ ul li{
     transition: transform 0.3s ease-in-out;
   }
 
-/*
-
-.botaofinal{
-  color: #fff;
-  background-color: #c971cc;
-  font-size: 14px;
-  padding: 14px 25px;
-  border-radius: 5px;
-  border: solid 1px;
-  border: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  margin: 1px;
-  margin-top: 1290px;
-  position: absolute;
-  right: 635px;
-  transition: background .2s;
-  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
-  cursor: pointer;
-}
-
-.botaofinal:hover{
-  background-color: #e69ee9;
-  color: #cac2c2;
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}*/
-
-.rodape{
-    position: absolute;
-    color: #fff;
-    margin-top: 1430px;
-    width: 100%;
-    height: 480px;
-    background-image: url("img/fundorodape02.png " ) ;
-    box-shadow: 0px 0px 10px rgba(118, 118, 118, 0.5);
-  }
-  
-  /*#listarodape{
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 960px;
-    font-family: 'Roboto', sans-serif;
-  
-  }
-
-  .botaorodape{
-    color: #fff;
-    background-color: #c971cc;
-    font-size: 10px;
-    padding: 10px 21px;
-    border-radius: 5px;
-    border: solid 1px;
-    border: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    margin: 300px;
-    position: absolute;
-    right: 15px;
-    transition: background .2s;
-    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
-    cursor: pointer;
-}
-
-.botaorodape:hover{
-  background-color: #e69ee9;
-  color: #cac2c2;
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-  .infofinal{
-    font-size: 12px;
-    margin-left: 1120px;
-  }
-
-  span{
-    font-size: 14px;
-  }
-
-  ul li{
-    padding: 1px;
-  }
-
-  .logorodape{
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 80px;
-  }
-
-  .localrodape{
-    position: absolute;
-    margin-top: 170px;
-    margin-left: 965px;
-  }
-
-  .telefonerodape{
-    position: absolute;
-    margin-top: 199px;
-    margin-left: 955px;
-  }
-
-  .facebookrodape{
-    position: absolute;
-    margin-top: 325px;
-    margin-left: 250px;
-    cursor: pointer;
-  }
-
-  .facebookrodape:hover{
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .instagramrodape{
-    position: absolute;
-    margin-top: 320px;
-    margin-left: 145px;
-    cursor: pointer;
-  }
-
-  .instagramrodape:hover{
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  */
-
-  .textoportifolio{
+.textoportfolio{
   text-align: center;
   grid-column: 1/-1;
   margin: 50px;
@@ -299,12 +227,12 @@ ul li{
   font-style: italic;
 }
 
-.portifolio{
+.portfolio{
     display: grid;
     grid-template-columns: 325px 325px 325px;
     gap: 25px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 150px;
     color: white;
   }
 
@@ -388,7 +316,367 @@ ul li{
   transition: transform 0.3s ease-in-out;
 }
 
-  @media (max-width:500px) {
+.rodape{
+  color: #fff;
+  margin-top: 230px;
+  width: 100%;
+  height: 480px;
+  background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
+}
+
+#titulo{
+  font-size: 17px;
+}
+
+.gridrodape{
+  display: grid;
+  grid-template-columns: 500px 325px;
+  justify-content: end;
+}
+
+.listamenu{
+  margin-top: 75px;
+}
+
+.listacontato{
+  margin-top: 80px;
+}
+
+@media (min-width: 300px)  and (max-width:400px) {
+
+  .background-slideshow{
+    text-align: center;
+    background-image: url("img/fundoprincipal02.png");
+    background: no-repeat;
+    height: 450px;
+    transition: background-image 0.4s ease-in-out;
+    width: 100%;
+    background-position: center top;
+}
+
+ .logo{
+  justify-content: center;
+  margin-top: 100px;
+  width: 275px;
+ }
+
+ .menu-li{
+  font-size: 1rem;
+  font-family: 'Great Vibes';
+  position: fixed;
+  z-index: 2;
+  gap: 0.5px;
+}
+
+.menu-li a{
+  padding: 1px;
+  border-radius: 5px;
+  transition: color .2s;
+  transition: background .2s;
+}
+
+ .agendetop{
+  display: none;
+ }
+
+  .apresentacao{
+    margin-top: 50px;
+    font-size: 1rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    position: relative;
+  }
+
+  .fotoapresentacao{
+    grid-column: 1;
+    }
+
+  .texto{
+    grid-column: 2;
+    padding: 20px;
+    position: relative;
+    display: none;
+  }
+
+  .textocelular{
+    display: block;
+  }
+
+  .agendeinicio{
+    margin: 45px;
+    margin-top:75px;
+    text-align: center;
+    place-self: center;
+    grid-column: 1;
+    padding: 13px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
+    color: #fff;
+    background-color: #c971cc;
+    position: relative;
+  }
+  
+  .agendeinicio:hover{
+    background-color: #e69ee9;
+    color: #4d4c4c;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .agendeinicio::before{
+    content: "";
+    width: 3.7rem;
+    height: 0.2rem;
+    position: absolute;
+    background-color: #e69ee9;
+    top: -30px;
+    right: 65px;
+  }
+
+  .portfolio{
+    margin-top: -60px;
+    display: grid;
+    grid-template-columns: 300px;
+    transform: scale(0.9);
+  }
+
+  .textoportfolio{
+    margin: 0px;
+    padding-bottom: 40px;
+    font-family: 'Great Vibes';
+    font-size: 2rem;
+    color: #ffffff;
+    font-style: italic;
+  }
+
+  .agende{
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+    grid-column: 1;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
+    color: #fff;
+    background-color: #c971cc;
+  }
+  .rodape{
+    color: #fff;
+    margin-top: 0px;
+    width: 100%;
+    height: 775px;
+    background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
+  }
+
+  .gridrodape{
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 35px;
+  }
+  
+  .listamenu{
+    margin-top: 0px;
+  }
+
+  .logorodape{
+    position: absolute;
+    left: 85px;
+    width: 150px;
+    height: 150px;
+    margin-top: 500px;
+  }
+  
+  .facebook{
+    position: absolute;
+    margin-top: 670px;
+    right: 65px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .instagram{
+    position: absolute;
+    margin-top: 670px;
+    left: 70px;
+    width: 45px;
+    height: 45px;
+  }
+  
+}
+
+@media (min-width: 401px)  and (max-width:460px) {
+
+  .background-slideshow{
+    text-align: center;
+    background-image: url("img/fundoprincipal02.png");
+    background: no-repeat;
+    height: 550px;
+    transition: background-image 0.4s ease-in-out;
+    width: 100%;
+    background-position: center top;
+}
+
+ .logo{
+  justify-content: center;
+  margin-top: 100px;
+  width: 320px;
+ }
+
+ .menu-li{
+  font-size: 1rem;
+  font-family: 'Great Vibes';
+  position: fixed;
+  z-index: 2;
+}
+
+.menu-li a{
+  padding: 4px;
+  border-radius: 30px;
+  transition: color .2s;
+  transition: background .2s;
+}
+
+ .agendetop{
+  display: none;
+ }
+
+  .apresentacao{
+    margin-top: 150px;
+    font-size: 1rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    position: relative;
+  }
+
+  .fotoapresentacao{
+    grid-column: 1;
+    }
+
+  .texto{
+    grid-column: 2;
+    padding: 20px;
+    position: relative;
+    display: none;
+  }
+
+  .textocelular{
+    display: block;
+  }
+
+  .agendeinicio{
+    margin: 45px;
+    margin-top:75px;
+    text-align: center;
+    place-self: center;
+    grid-column: 1;
+    padding: 13px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
+    color: #fff;
+    background-color: #c971cc;
+    position: relative;
+  }
+  
+  .agendeinicio:hover{
+    background-color: #e69ee9;
+    color: #4d4c4c;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .agendeinicio::before{
+    content: "";
+    width: 3.7rem;
+    height: 0.2rem;
+    position: absolute;
+    background-color: #e69ee9;
+    top: -30px;
+    right: 65px;
+  }
+
+  .portfolio{
+    margin-top: -60px;
+    display: grid;
+    grid-template-columns: 300px;
+    transform: scale(0.9);
+  }
+
+  .textoportfolio{
+    margin: 0px;
+    padding-bottom: 40px;
+    font-family: 'Great Vibes';
+    font-size: 2rem;
+    color: #ffffff;
+    font-style: italic;
+  }
+
+  .agende{
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+    grid-column: 1;
+    transition: background .2s;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    cursor: pointer;
+    color: #fff;
+    background-color: #c971cc;
+  }
+  .rodape{
+    color: #fff;
+    margin-top: 0px;
+    width: 100%;
+    height: 900px;
+    background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
+  }
+
+  .gridrodape{
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .listamenu{
+    margin-top: 30px;
+  }
+
+  .logorodape{
+    position: absolute;
+    margin-top: 550px;
+    left: 90px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .facebook{
+    position: absolute;
+    margin-top: 820px;
+    left: 140px;
+  }
+  
+  .instagram{
+    position: absolute;
+    margin-top: 820px;
+    left: 240px;
+  }
+
+}
+
+@media (min-width: 461px)  and (max-width:500px) {
 
     .background-slideshow{
       text-align: center;
@@ -402,9 +690,24 @@ ul li{
 
    .logo{
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 100px;
     width: 320px;
    }
+
+   .menu-li{
+    font-size: 1.2rem;
+    font-family: 'Great Vibes';
+    position: fixed;
+    z-index: 2;
+    gap: 10px;
+  }
+
+  .menu-li a{
+    padding: 10px;
+    border-radius: 30px;
+    transition: color .2s;
+    transition: background .2s;
+  }
 
    .agendetop{
     display: none;
@@ -417,6 +720,7 @@ ul li{
       display: grid;
       grid-template-columns: 300px;
       justify-content: center;
+      position: relative;
     }
 
     .fotoapresentacao{
@@ -430,25 +734,13 @@ ul li{
       display: none;
     }
 
-    .texto::before{
-      content: "";
-      width: 500px;
-      height: 500px;
-      position: absolute;
-      background-color: #e69ee9;
-      top: 2rem;
-      right: -100rem;
-      z-index: -1;
-      border-radius: 4px;
-      opacity: 0.6;
-    }
-
     .textocelular{
       display: block;
     }
 
     .agendeinicio{
       margin: 45px;
+      margin-top:75px;
       text-align: center;
       place-self: center;
       grid-column: 1;
@@ -476,18 +768,18 @@ ul li{
       height: 0.2rem;
       position: absolute;
       background-color: #e69ee9;
-      top: -35px;
+      top: -30px;
       right: 65px;
     }
 
-    .portifolio{
+    .portfolio{
       margin-top: -60px;
       display: grid;
       grid-template-columns: 300px;
       transform: scale(0.9);
     }
 
-    .textoportifolio{
+    .textoportfolio{
       margin: 0px;
       padding-bottom: 40px;
       font-family: 'Great Vibes';
@@ -509,9 +801,49 @@ ul li{
       background-color: #c971cc;
     }
 
-  }
+    .rodape{
+      color: #fff;
+      margin-top: 0px;
+      width: 100%;
+      height: 900px;
+      background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
+    }
 
-  @media (min-width: 501px)  and (max-width:900px) {
+    .gridrodape{
+      display: grid;
+      grid-template-columns: 460px;
+      justify-content: center;
+      text-align: center;
+      margin-left: -40px;
+    }
+    
+    .listamenu{
+      margin-top: 30px;
+    }
+
+    .logorodape{
+      position: absolute;
+      margin-top: 500px;
+      left: 90px;
+      width: 300px;
+      height: 300px;
+    }
+    
+    .facebook{
+      position: absolute;
+      margin-top: 820px;
+      left: 140px;
+    }
+    
+    .instagram{
+      position: absolute;
+      margin-top: 820px;
+      left: 275px;
+    }
+
+}
+
+@media (min-width: 501px)  and (max-width:900px) {
 
     .background-slideshow{
       text-align: center;
@@ -525,13 +857,20 @@ ul li{
 
   .logo{
     justify-content: center;
-    margin-top: 10px;
-    width: 450px;
+    margin-top: 65px;
+    width: 370px;
    }
+
+   .menu-li{
+    font-size: 1.3rem;
+    font-family: 'Great Vibes';
+    position: fixed;
+    z-index: 2;
+    gap: 10px;
+  }
 
    .agendetop{
      display: none;
-
   }
 
     .apresentacao{
@@ -554,25 +893,13 @@ ul li{
       display: none;
     }
 
-    .texto::before{
-      content: "";
-      width: 500px;
-      height: 500px;
-      position: absolute;
-      background-color: #e69ee9;
-      top: 2rem;
-      right: -100rem;
-      z-index: -1;
-      border-radius: 4px;
-      opacity: 0.6;
-    }
-
     .textocelular{
       display: block;
     }
 
     .agendeinicio{
       margin: 45px;
+      margin-top: 75px;
       text-align: center;
       place-self: center;
       grid-column: 1;
@@ -600,18 +927,18 @@ ul li{
       height: 0.2rem;
       position: absolute;
       background-color: #e69ee9;
-      top: -35px;
+      top: -30px;
       right: 65px;
     }
 
-    .portifolio{
+    .portfolio{
       margin-top: -60px;
       display: grid;
       grid-template-columns: 300px;
       transform: scale(0.9);
     }
 
-    .textoportifolio{
+    .textoportfolio{
       margin: 0px;
       padding-bottom: 40px;
       font-family: 'Great Vibes';
@@ -633,123 +960,49 @@ ul li{
       background-color: #c971cc;
     }
 
-  }
-
-  @media (min-width: 700px)  and (max-width:1000px) {
-
-    .background-slideshow{
-      text-align: center;
-      background-image: url("img/fundoprincipal02.png");
-      background: no-repeat;
-      height: 720px;
-      transition: background-image 0.4s ease-in-out;
-      width: 100%;
-      background-position: center top;
-  }
-
-    .apresentacao{
-      margin-top: 50px;
-      font-size: 1rem;
-      color: white;
-      display: grid;
-      grid-template-columns: 300px;
-      justify-content: center;
-    }
-
-    .fotoapresentacao{
-      grid-column: 1;
-      }
-
-    .texto{
-      grid-column: 2;
-      padding: 20px;
-      position: relative;
-      display: none;
-    }
-
-    .texto::before{
-      content: "";
-      width: 500px;
-      height: 500px;
-      position: absolute;
-      background-color: #e69ee9;
-      top: 2rem;
-      right: -100rem;
-      z-index: -1;
-      border-radius: 4px;
-      opacity: 0.6;
-    }
-
-    .textocelular{
-      display: block;
-    }
-
-    .agendeinicio{
-      margin: 45px;
-      text-align: center;
-      place-self: center;
-      grid-column: 1;
-      padding: 13px;
-      font-size: 0.9rem;
-      border-radius: 5px;
-      transition: background .2s;
-      box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
-      cursor: pointer;
+    .rodape{
       color: #fff;
-      background-color: #c971cc;
-      position: relative;
-    }
-    
-    .agendeinicio:hover{
-      background-color: #e69ee9;
-      color: #4d4c4c;
-      transform: scale(1.1);
-      transition: transform 0.3s ease-in-out;
-    }
-    
-    .agendeinicio::before{
-      content: "";
-      width: 3.7rem;
-      height: 0.2rem;
-      position: absolute;
-      background-color: #e69ee9;
-      top: -35px;
-      right: 65px;
-    }
-
-    .portifolio{
       margin-top: 0px;
-      display: grid;
-      gap: 30px;
-      grid-template-columns: 300px 300px;
-      transform: scale(0.9);
+      width: 100%;
+      height: 950px;
+      background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
     }
 
-    .textoportifolio{
-      margin: 0px;
-      padding-bottom: 40px;
-      font-family: 'Great Vibes';
-      font-size: 2rem;
-      color: #ffffff;
-      font-style: italic;
-    }
-  
-    .agende{
-      text-align: center;
-      padding: 10px;
-      margin-top: 50px;
-      border-radius: 5px;
-      grid-column: 1;
-      transition: background .2s;
-      box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
-      cursor: pointer;
-      color: #fff;
-      background-color: #c971cc;
+    .logorodape{
+      position: absolute;
+      margin-top: 500px;
+      left: 110px;
+      width: 300px;
+      height: 300px;
     }
     
-  }
+    .facebook{
+      position: absolute;
+      margin-top: 800px;
+      left: 180px;
+    }
+    
+    .instagram{
+      position: absolute;
+      margin-top: 800px;
+      left: 285px;
+    }
 
-  @media (min-width: 900px)  and (max-width:1100px) {
+    .gridrodape{
+      display: grid;
+      grid-template-columns: 460px;
+      justify-content: center;
+      text-align: center;
+      margin-left: -40px;
+    }
+    
+    .listamenu{
+      margin-top: 30px;
+    }
+
+}
+
+@media (min-width: 900px)  and (max-width:1100px) {
 
     .background-slideshow{
       text-align: center;
@@ -759,6 +1012,10 @@ ul li{
       transition: background-image 0.4s ease-in-out;
       width: 100%;
       background-position: center top;
+  }
+
+  .agendetop{
+    display: none;
   }
 
     .apresentacao{
@@ -781,25 +1038,12 @@ ul li{
       display: none;
     }
 
-    .texto::before{
-      content: "";
-      width: 500px;
-      height: 500px;
-      position: absolute;
-      background-color: #e69ee9;
-      top: 2rem;
-      right: -100rem;
-      z-index: -1;
-      border-radius: 4px;
-      opacity: 0.6;
-    }
-
     .textocelular{
       display: block;
     }
 
     .agendeinicio{
-      margin: 45px;
+      margin: 55px;
       text-align: center;
       place-self: center;
       grid-column: 2;
@@ -827,11 +1071,11 @@ ul li{
       height: 0.2rem;
       position: absolute;
       background-color: #e69ee9;
-      top: -35px;
+      top: -23px;
       right: 65px;
     }
 
-    .portifolio{
+    .portfolio{
       margin-top: 0px;
       display: grid;
       gap: 30px;
@@ -839,7 +1083,7 @@ ul li{
       transform: scale(0.9);
     }
 
-    .textoportifolio{
+    .textoportfolio{
       margin: 0px;
       padding-bottom: 40px;
       font-family: 'Great Vibes';
@@ -861,9 +1105,9 @@ ul li{
       background-color: #c971cc;
     }
 
-  }
+}
 
-  @media (min-width: 1100px)  and (max-width:1250px) {
+@media (min-width: 1100px)  and (max-width:1250px) {
 
     .background-slideshow{
       text-align: center;
@@ -896,19 +1140,6 @@ ul li{
       display: none;
     }
 
-    .texto::before{
-      content: "";
-      width: 5000px;
-      height: 500px;
-      position: absolute;
-      background-color: #e69ee9;
-      top: 2rem;
-      right: 10rem;
-      z-index: -1;
-      border-radius: 4px;
-      opacity: 0.6;
-    }
-
     .textocelular{
       display: block;
     }
@@ -946,7 +1177,7 @@ ul li{
       right: 65px;
     }
 
-    .portifolio{
+    .portfolio{
       margin-top: 0px;
       display: grid;
       gap: 30px;
@@ -954,7 +1185,7 @@ ul li{
       transform: scale(0.9);
     }
 
-    .textoportifolio{
+    .textoportfolio{
       margin: 0px;
       padding-bottom: 40px;
       font-family: 'Great Vibes';
@@ -976,9 +1207,9 @@ ul li{
       background-color: #c971cc;
     }
     
-  }
+}
 
-  @media (min-width: 1250px)  and (max-width:1400px) {
+@media (min-width: 1250px)  and (max-width:1400px) {
 
     .background-slideshow{
       text-align: center;
@@ -1020,20 +1251,6 @@ ul li{
     display: none;
   }
   
-  .texto::before{
-      content: "";
-      width: 380px;
-      height: 500px;
-      position: absolute;
-      background-color: #e69ee9;
-      top: 2rem;
-      right: 40rem;
-      z-index: -1;
-      border-radius: 4px;
-      opacity: 0.6;
-    }
-  
-  
   .agendeinicio{
     text-align: center;
     place-self: center;
@@ -1065,7 +1282,7 @@ ul li{
     right: 65px;
   }
 
-    .portifolio{
+    .portfolio{
       margin-top:70px;
       display: grid;
       gap: 30px;
@@ -1073,7 +1290,7 @@ ul li{
       transform: scale(0.9);
     }
 
-    .textoportifolio{
+    .textoportfolio{
       margin: 0px;
       padding-bottom: 40px;
       font-family: 'Great Vibes';
@@ -1096,6 +1313,6 @@ ul li{
     }
 
 
-  }
+}
 
 

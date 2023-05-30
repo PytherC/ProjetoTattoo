@@ -18,26 +18,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-  <body>
+
+<body>
     <script src="jquery/jquery-3.7.0.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 
-<header>  
+<header>
+    <div class="background-slideshow" id="home">
+        <nav class="menu">
+            <ul class="menu-li">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#quem-somos">Quem somos</a></li>
+            </ul>
+        </nav>
     
-    <div class="background-slideshow">
-    <img class="logo" src="img/logo.png" alt="Logo da pagina" id="logo">
+        <img class="logo" src="img/logo.png" alt="Logo da pagina">
+    
     <a class="agendetop" href="https://contate.me/maciel_tattoo"> AGENDE SUA TATUAGEM </a>
     
+    <button class="botaowpp">
+        <a href="https://contate.me/maciel_tattoo"> <img src= "img/iconewpp.png" width="50" height="50" alt="Whatsapp"> </a>
+  </button>
 </div>
 </header>
 
-<main>  
-       <button class="botaowpp">
-            <a href="https://contate.me/maciel_tattoo"> <img src= "img/iconewpp.png" width="40" height="40" alt="Whatsapp"> </a>
-      </button>
-
   <main>          
-  <div class="apresentacao">
+  <div class="apresentacao" id="quem-somos">
 
     <img src="img/tattooleao.png" alt="Tattoo da pagina" width="400px" height="400px" class="fotoapresentacao anime">
       
@@ -64,27 +72,22 @@
  </div>
 
   </main>
-           <!-- <div class="botaomeio"> <b><a href="https://contate.me/maciel_tattoo"> AGENDE SUA TATUAGEM </a></b></div>
 
-<div class="artes">
-    <h2>Alguns dos nossos trabalhos</h2>
-</div> !-->
+<div class="portfolio anime" id="portfolio">
 
-<div class="portifolio anime">
+    <h2 class="textoportfolio">Conheça alguns de nossos trabalhos recentes</h2>
 
-    <h2 class="textoportifolio">Conheça alguns de nossos trabalhos recentes</h2>
+    <img src="img/portfolio.png" alt="portfolio" width="310px" height="420px" id="img0">
 
-    <img src="img/portifolio.png" alt="portifolio" width="310px" height="420px" id="img0">
+    <img src="img/portfolio1.png" alt="portfolio" width="310px" height="420px" id="img01">
 
-    <img src="img/portifolio1.png" alt="portifolio" width="310px" height="420px" id="img01">
+    <img src="img/portfolio2.png" alt="portfolio" width="310px" height="420px" id="img02">
 
-    <img src="img/portifolio2.png" alt="portifolio" width="310px" height="420px" id="img02">
+    <img src="img/portfolio3.png" alt="portfolio" width="310px" height="420px" id="img03">
 
-    <img src="img/portifolio3.png" alt="portifolio" width="310px" height="420px" id="img03">
+    <img src="img/portfolio4.png" alt="portfolio" width="310px" height="420px" id="img04">
 
-    <img src="img/portifolio4.png" alt="portifolio" width="310px" height="420px" id="img04">
-
-    <img src="img/portifolio5.png" alt="portifolio" width="310px" height="420px" id="img05">
+    <img src="img/portfolio5.png" alt="portfolio" width="310px" height="420px" id="img05">
 
     <a class="agende" href="https://contate.me/maciel_tattoo">AGENDE SUA TATUAGEM</a>
 
@@ -92,32 +95,29 @@
 
 </main> 
 
-<!--<div class="botaofinal"><b><a href="https://contate.me/maciel_tattoo"> AGENDE UM HORÁRIO AGORA </a></b></div>-->
+<div class="rodape" id="contato">
 
-<div class="rodape">
     <footer>
-        <ul id="listarodape">
-            <li><h4>INFORMAÇÔES DE CONTATO</h4></li>
-            <p>
-            <li>Rua Rio Grande do Sul, 15, Carapicuíba</li>
-            <p>
-            <li><span>(11)98717-7923</span></li>
+     <!--<img class="logorodape" src= "img/logo.png" height="400px" width="400px">
+     <a href="#"> <img class="instagram" src= "img/instagram.png" height="55px" width="55px"></a>
+     <a href="#"> <img class="facebook" src= "img/facebook.png" height="55px" width="55px"></a>!-->
+
+        <div class="gridrodape">
+        <ul>
+            <li class="listacontato"><h4 id="titulo">INFORMAÇÔES DE CONTATO</h4></li>
+            <li><img src= "img/local.png" height="13px" width="13px">Rua Rio Grande do Sul - Carapicuíba - SP - 06325-050</li>
+            <li><img src= "img/tempo.png" height="13px" width="13px">Segunda a sábado 8h às 18h</li>
+            <li><img src= "img/telefone.png" height="13px" width="13px">(11)98717-7923</li>
         </ul> 
 
-        <!--<div class="botaorodape"><b><a href="https://contate.me/maciel_tattoo"> AGENDE SUA TATUAGEM </a></b></div>
-
-
-        <img src="img/logo.png" alt="logo" class="logorodape" width="300px" height="300px">
-
-        <img src="img/local.png" alt="local" class="localrodape" width="42px" height="42px">
-
-        <img src="img/telefone.png" alt="telefone" class="telefonerodape" width="60px" height="60px">
-
-        <a href="https://www.facebook.com/maciel.tattoo"> <img src="img/iconefacebook.png" a href="https://contate.me/maciel_tattoo" alt="facebook" class="facebookrodape" width="52px" height="52px"> </a>
-
-        <a href="https://www.instagram.com/maciel.tattoo/"> <img src="img/iconeinstagram.png" alt="instagram" class="instagramrodape" width="60px" height="60px"> </a> -->
+        <ul>
+            <li class="listamenu"><h4 id="titulo">SISTEMAP</h4></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#quem-somos">Quem somos</a></li>
+        </div>
+        </ul> 
     </footer>
-</div>
 
 
     </body>

@@ -27,6 +27,34 @@ function changeBackground() {
   document.querySelector('.background-slideshow').style.backgroundImage = 'url("img/' + randomImage + '")';
 }
 
+// Aguarde até que o documento esteja totalmente carregado
+
+$(document).ready(function() {
+// Selecione todos os links do menu
+const menuLinks = document.querySelectorAll('.menu-li a');
+      
+// Adicione um evento de clique a cada link do menu
+menuLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+      
+const href = this.getAttribute('href');
+const target = document.querySelector(href);
+      
+if (target) {
+const sectionTop = target.offsetTop;
+      
+window.scrollTo({
+top: sectionTop,
+behavior: 'smooth'
+    });
+   }
+  });
+ });
+});
+
+//Jquery
+
 $(window).scroll(function() {
   var windowTop = $(this).scrollTop() ;
   $('.anime').each(function(){
@@ -34,7 +62,6 @@ $(window).scroll(function() {
           $(this). addClass ('anime-init');
       } else {
           $(this).removeClass ('anime-init');
-      }
-  
+      } 
   });
 });

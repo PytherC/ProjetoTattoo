@@ -51,19 +51,18 @@ li img {
   gap: 20px;
 }
 
-.menu-li a{
-  padding: 10px;
-  border-radius: 30px;
-  transition: color .2s;
-  transition: background .2s;
+.menu-li a:after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #e69ee9;
+  margin-top: 2px;
+  transition: 0.3s;
 }
 
-.menu-li a:hover{
-  transition: transform 0.3s ease-in-out;
-  color: #000000;
-  transition: color .1s;
-  background-color: #deb9df;
-  transition: background .2s;
+.menu-li a:hover:after{
+  width: 100%;
 }
 
 .logo{
@@ -367,6 +366,11 @@ li img {
 
 #h4servicos{
   color: #e69ee9;
+}
+
+#iconesservicos:hover{
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
 }
 
 .rodape{

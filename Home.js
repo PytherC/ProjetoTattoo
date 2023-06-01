@@ -5,7 +5,13 @@ var largeScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundopri
 
 var currentIndex = 0; // Índice da imagem atual
 
-setInterval(changeBackground, 4000);
+// Pré-carregar as imagens em segundo plano
+preloadImages(images);
+preloadImages(smallScreenImages);
+preloadImages(mediumScreenImages);
+preloadImages(largeScreenImages);
+
+setInterval(changeBackground, 8000);
 
 function changeBackground() {
   var randomImage;
@@ -23,9 +29,27 @@ function changeBackground() {
 
   currentIndex = (currentIndex + 1) % images.length; // Atualiza o índice para a próxima imagem
 
-  document.querySelector('.background-slideshow').style.backgroundImage = 'url("img/' + randomImage + '")';
+  var backgroundImageUrl = 'url("img/' + randomImage + '")';
+
+  var backgroundSlideshowElement = document.querySelector('.background-slideshow');
+  backgroundSlideshowElement.style.backgroundImage = backgroundImageUrl;
+
+  // Remove a classe .zoom-in se já estiver presente
+  backgroundSlideshowElement.classList.remove('zoom-in');
+
+  // Aguarda um pequeno intervalo antes de adicionar a classe .zoom-in
+  setTimeout(function() {
+    // Adiciona a classe .zoom-in para aplicar o efeito de zoom
+    backgroundSlideshowElement.classList.add('zoom-in');
+  }, 10);
 }
 
+function preloadImages(imageArray) {
+  for (var i = 0; i < imageArray.length; i++) {
+    var img = new Image();
+    img.src = 'img/' + imageArray[i];
+  }
+}
 
 
 // Aguarde até que o documento esteja totalmente carregado
@@ -53,8 +77,6 @@ behavior: 'smooth'
   });
  });
 });
-
-
 
 
 //Jquery

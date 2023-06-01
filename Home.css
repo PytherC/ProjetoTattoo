@@ -86,6 +86,7 @@ li img {
     transition: background .2s;
     box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .agendetop:hover{
@@ -155,6 +156,7 @@ li img {
   color: #fff;
   background-color: #c971cc;
   position: relative;
+  transition: transform 0.3s ease-in-out;
 }
 
 .agendeinicio:hover{
@@ -211,6 +213,7 @@ li img {
     border-style: none;
     background: none;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
   }
 
   .botaowpp:hover{
@@ -242,6 +245,7 @@ li img {
   border: solid  rgb(7, 7, 7);
   border-radius: 6px;
   display: grid;
+  transition: transform 0.3s ease-in-out;
 }
 
 #img0:hover{
@@ -253,6 +257,7 @@ li img {
   border: solid  rgb(7, 7, 7);
   border-radius: 6px;
   display: grid;
+  transition: transform 0.3s ease-in-out;
 }
 
 #img01:hover{
@@ -264,6 +269,7 @@ li img {
   border: solid  rgb(7, 7, 7);
   border-radius: 6px;
   display: grid;
+  transition: transform 0.3s ease-in-out;
 }
 
 #img02:hover{
@@ -275,6 +281,7 @@ li img {
   border: solid  rgb(7, 7, 7);
   border-radius: 6px;
   display: grid;
+  transition: transform 0.3s ease-in-out;
 }
 
 #img03:hover{
@@ -286,6 +293,7 @@ li img {
   border: solid  rgb(7, 7, 7);
   border-radius: 6px;
   display: grid;
+  transition: transform 0.3s ease-in-out;
 }
 
 #img04:hover{
@@ -297,6 +305,7 @@ li img {
   border: solid  rgb(7, 7, 7);
   border-radius: 6px;
   display: grid;
+  transition: transform 0.3s ease-in-out;
 }
 
 #img05:hover{
@@ -315,6 +324,7 @@ li img {
   cursor: pointer;
   color: #fff;
   background-color: #c971cc;
+  transition: transform 0.3s ease-in-out;
 }
 
 .agende:hover{
@@ -324,9 +334,44 @@ li img {
   transition: transform 0.3s ease-in-out;
 }
 
+.servicos{
+  display: grid;
+  grid-template-columns: 500px 400px 500px;
+  justify-content: center;
+  margin-top: 250px;
+  gap: 20px;
+}
+
+.servicos01{
+  text-align: center;
+  place-self: center;
+}
+
+.servicos02{
+  text-align: center;
+  place-self: center;
+}
+
+.logoservicos{
+  margin-top: 50px;
+  margin-left: 85px;
+}
+
+.atendimento{
+  padding: 40px;
+}
+
+.exclusividade{
+  padding: 55px;
+}
+
+#h4servicos{
+  color: #e69ee9;
+}
+
 .rodape{
   color: #fff;
-  margin-top: 230px;
+  margin-top: 400px;
   width: 100%;
   height: 560px;
   background-color: rgba(18, 18, 18, 0.5); /* Cor de fundo com opacidade baixa */
@@ -371,6 +416,7 @@ li img {
   position: absolute;
   right: 110px;
   margin-top: 385px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .facebook:hover{
@@ -382,6 +428,7 @@ li img {
   position: absolute;
   right: 235px;
   margin-top: 385px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .instagram:hover{
@@ -508,6 +555,10 @@ li img {
     font-size: 1.3rem;
     color: #ffffff;
     font-style: italic;
+  }
+
+  .servicos{
+    display: none;
   }
 
   .rodape{
@@ -737,6 +788,11 @@ li img {
     color: #fff;
     background-color: #c971cc;
   }
+
+  .servicos{
+    display: none;
+  }
+
   .rodape{
     color: #fff;
     margin-top: 0px;
@@ -1051,6 +1107,10 @@ li img {
   margin-left: 40px;
 }
 
+.servicos{
+  display: none;
+}
+
 }
 
 @media (min-width: 461px)  and (max-width:500px) {
@@ -1169,6 +1229,10 @@ li img {
       cursor: pointer;
       color: #fff;
       background-color: #c971cc;
+    }
+
+    .servicos{
+      display: none;
     }
 
     .rodape{
@@ -1462,6 +1526,12 @@ li img {
     font-size: 10px;
     grid-column: 2;
   }
+
+  .servicos{
+    display: grid;
+    grid-template-columns: 300px;
+    margin-top: 100px;
+  }
   
   .rodapedireitos{
     grid-column: 1;
@@ -1559,7 +1629,7 @@ li img {
 
     .rodape{
       color: #fff;
-      margin-top: 0px;
+      margin-top: 200px;
       width: 100%;
       height: 970px;
       background-color: rgba(28, 26, 26, 0.5); /* Cor de fundo com opacidade baixa */
@@ -1631,6 +1701,16 @@ li img {
   .agende{
     font-size: 14px;
     grid-column: 2;
+  }
+
+  .servicos{
+    display: grid;
+    grid-template-columns: 500px;
+    margin-top: 100px;
+  }
+
+  .logoservicos{
+    margin-left: 120px;
   }
 
   .rodapedireitos{
@@ -1741,6 +1821,15 @@ li img {
       background-color: #c971cc;
     }
 
+    .servicos{
+      display: grid;
+      grid-template-columns: 500px 500px;
+      margin-top: 100px;
+    }
+
+    .logoservicos{
+     grid-row: 4;
+    }
 
     .gridrodape{
       display: grid;
@@ -1889,7 +1978,23 @@ li img {
       background-color: #c971cc;
     }
 
+    .servicos{
+      display: grid;
+      grid-template-columns: 400px 400px 400px;
+      margin-top: 100px;
+      gap: 10px;
+    }
+
 }
 
+@media (min-width: 1401px)  and (max-width:1500px) {
+  
+  .servicos{
+    display: grid;
+    grid-template-columns: 400px 400px 300px;
+    margin-top: 100px;
+    gap: 10px;
+  }
+}
 
 

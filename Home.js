@@ -1,31 +1,32 @@
-var images = ['fundoprincipal02.png', 'fundoprincipal.png ', 'fundoprincipal03.png']; //Define as imagens de fundo
-var smallScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; //Define as imagens de fundo caso a tela seja menor que 500px
-var mediumScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; //Define as imagens de fundo caso a tela seja 500px até 800px
-var largeScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; //Define as imagens de fundo caso a tela seja 800px ate 1200px
+var images = ['fundoprincipal02.png', 'fundoprincipal.png', 'fundoprincipal03.png']; // Define as imagens de fundo
+var smallScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; // Define as imagens de fundo caso a tela seja menor que 500px
+var mediumScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; // Define as imagens de fundo caso a tela seja 500px até 800px
+var largeScreenImages = ['fundoprincipal.png', 'fundoprincipal02.png', 'fundoprincipal03.png']; // Define as imagens de fundo caso a tela seja 800px até 1200px
+
+var currentIndex = 0; // Índice da imagem atual
 
 setInterval(changeBackground, 4000);
 
 function changeBackground() {
-  var randomIndex;
   var randomImage;
   var screenWidth = window.innerWidth;
-  
+
   if (screenWidth < 500) {
-    randomIndex = Math.floor(Math.random() * smallScreenImages.length);
-    randomImage = smallScreenImages[randomIndex];
+    randomImage = smallScreenImages[currentIndex];
   } else if (screenWidth >= 500 && screenWidth < 800) {
-    randomIndex = Math.floor(Math.random() * mediumScreenImages.length);
-    randomImage = mediumScreenImages[randomIndex];
+    randomImage = mediumScreenImages[currentIndex];
   } else if (screenWidth >= 800 && screenWidth < 1200) {
-    randomIndex = Math.floor(Math.random() * largeScreenImages.length);
-    randomImage = largeScreenImages[randomIndex];
+    randomImage = largeScreenImages[currentIndex];
   } else {
-    randomIndex = Math.floor(Math.random() * images.length);
-    randomImage = images[randomIndex];
+    randomImage = images[currentIndex];
   }
-  
+
+  currentIndex = (currentIndex + 1) % images.length; // Atualiza o índice para a próxima imagem
+
   document.querySelector('.background-slideshow').style.backgroundImage = 'url("img/' + randomImage + '")';
 }
+
+
 
 // Aguarde até que o documento esteja totalmente carregado
 
@@ -52,6 +53,9 @@ behavior: 'smooth'
   });
  });
 });
+
+
+
 
 //Jquery
 

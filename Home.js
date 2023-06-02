@@ -11,7 +11,7 @@ preloadImages(smallScreenImages);
 preloadImages(mediumScreenImages);
 preloadImages(largeScreenImages);
 
-setInterval(changeBackground, 8000);
+setInterval(changeBackground, 10000);
 
 function changeBackground() {
   var randomImage;

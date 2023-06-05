@@ -51,14 +51,10 @@ function preloadImages(imageArray) {
   }
 }
 
-
-// Aguarde até que o documento esteja totalmente carregado
-
+// Scroll suave ao clicar no link do "menu-li a"
 $(document).ready(function() {
-// Selecione todos os links do menu
 const menuLinks = document.querySelectorAll('.menu-li a');
       
-// Adicione um evento de clique a cada link do menu
 menuLinks.forEach(link => {
 link.addEventListener('click', function(e) {
 e.preventDefault();
@@ -77,10 +73,39 @@ behavior: 'smooth'
   });
  });
 });
+ 
+
+
+// Scroll suave ao clicar no link do "menu-mobile a"
+$(document).ready(function() {
+  const menuLinks = document.querySelectorAll('.menu-mobile a');
+        
+  menuLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+  e.preventDefault();
+        
+  const href = this.getAttribute('href');
+  const target = document.querySelector(href);
+        
+  if (target) {
+  const sectionTop = target.offsetTop;
+        
+  window.scrollTo({
+  top: sectionTop,
+  behavior: 'smooth'
+      });
+     }
+    });
+   });
+  });
+
+
 
 
 //Jquery
 
+
+//Anima todos os itens que tem anime na classe, eles aparecem na tela de acordo com o scroll
 $(window).scroll(function() {
   var windowTop = $(this).scrollTop() ;
   $('.anime').each(function(){
@@ -89,5 +114,38 @@ $(window).scroll(function() {
       } else {
           $(this).removeClass ('anime-init');
       } 
+  });
+});
+
+//Nav fixo após sair 70px do topo
+$(window).scroll(function() {
+  var scrollTop = $(this).scrollTop();
+  var nav = $('.menu-li');
+
+  if (scrollTop > 70) {
+      if (!nav.hasClass('fixed-nav')) {
+          nav.stop().animate({
+              backgroundColor: '#ff0000', // Altere para a cor desejada
+              height: '60px' // Altere para a altura desejada
+          }, 900); // Defina a duração da animação (em milissegundos)
+          nav.addClass('fixed-nav');
+      }
+  } else {
+      if (nav.hasClass('fixed-nav')) {
+          nav.stop().animate({
+              backgroundColor: 'transparent', // Altere para a cor desejada
+              height: '60px' // Altere para a altura original
+          }, 600); // Defina a duração da animação (em milissegundos)
+          nav.removeClass('fixed-nav');
+      }
+  }
+});
+
+
+//Ativou o botão "mobile-btn" ao clicar
+$(document).ready(function() {
+  $('.mobile-btn').click(function() {
+    $(this).toggleClass('active');
+    $('.menu-mobile').toggleClass('active');
   });
 });
